@@ -1,0 +1,76 @@
+{
+"Changes": [
+    /************************************************
+ ANIMATIONS 
+ ************************************************/
+  {
+"LogName": "Animations",
+"Action": "EditData",
+"Target": "Data/animationDescriptions",
+"Entries": {
+"{{ModID}}_MavTrim1": "16/17 17 17 16 16 16 16/17",
+"{{ModID}}_MavTrim3": "24/25 25 25 24 24 25/25",
+"{{ModID}}_MavRake1": "18/19 19 19 18 18 18/19",
+"{{ModID}}_MavRake3": "26/27 27 27 26 26 26/27",
+"{{ModID}}_MavClean2": "20/21 21 21 20 20 20/21",
+"{{ModID}}_MavClean1": "22/23 23 23 22 22 22/23",
+"{{ModID}}_MavClean3": "28/29 29 29 28 28 28/29",
+}
+ },
+ /************************************************
+ Load Blank SCHEDULES
+ ************************************************/
+{
+"LogName": "Schedule",
+"Action": "Load",
+"Target": "Characters/schedules/FC.Maverick",
+"FromFile": "Data/Empty.json",
+},
+{
+"Action": "Load",
+"Target": "strings/schedules/FC.Maverick",
+"FromFile": "Data/Empty.json",
+   },
+{
+"Action": "EditData",
+"Target": "Strings/schedules/FC.Maverick",
+"Entries": {
+"bah": "bah",
+   }
+   },
+   
+    /************************************************
+ ** FC.Maverick
+ ************************************************/
+  /////VANILLA 3< Left facing >1 Right Facing  
+         {"LogName": "Schedule Edit",
+"Action": "EditData",
+"Target": "Characters/schedules/FC.Maverick",
+"Update": "OnTimeChange, OnLocationChange",
+"Entries": {
+"spring": "610 {{ModID}}_NewGraveYard {{Random:31 11 1 {{ModID}}_MavTrim1,24 6 1 MavClean1,21 5 2 {{ModID}}_MavRake1,20 1 3 {{ModID}}_MavClean3,21 1 2 MavClean2}}/910 {{ModID}}_OldGraveYard {{Random:21 22 3 {{ModID}}_MavClean3,13 27 2 MavRake3,12 20 3 {{ModID}}_MavClean3,8 18 1 {{ModID}}_MavClean1,15 18 1 {{ModID}}_MavTrim1}}/1030 {{ModID}}_OldGraveYard {{Random:8 16 2 {{ModID}}_MavClean2,9 26 3 {{ModID}}_MavClean2,36 23 1 {{ModID}}_MavTrim1}}/1200 Town {{Random:44 90 3,41 84 1,49 88 3,50 95 2}}/1900 {{ModID}}_NewGraveYard {{Random:31 11 1 {{ModID}}_MavTrim1,24 6 1 {{ModID}}_MavClean1,21 5 2 {{ModID}}_MavRake1,20 1 3 {{ModID}}_MavClean3,21 1 2 MavClean2}}/2300 {{ModID}}_MavericksHouse 12 9 3",
+
+"summer": "GOTO spring",
+
+"fall": "GOTO spring",
+
+"winter": "GOTO spring",
+
+"rain": "1900 SeedShop {{Random:37 18 3,8 19 3,12 29 3}}/2300 {{ModID}}_MavericksHouse 12 9 3",
+},
+},
+              /////VANILLA
+         {"LogName": "Schedule Edit",
+"Action": "EditData",
+"Target": "Characters/schedules/FC.Maverick",
+"Update": "OnTimeChange, OnLocationChange",
+"Entries": {
+    "winter": "1200 {{ModID}}_OldGraveYard {{Random:21 22 3 {{ModID}}_MavClean3,13 27 2 {{ModID}}_MavRake3}}/1430 {{ModID}}_OldGraveYard {{Random:12 20 3 MavClean3,8 18 1 MavClean1,15 18 1 {{ModID}}_MavTrim1}}/1600 SeedShop {{Random:37 18 3,8 19 3,12 29 3,8 16 2 {{ModID}}_MavClean2,9 26 3 {{ModID}}_MavClean2,36 23 1 {{ModID}}_MavTrim1}}/2300 {{ModID}}_MavericksHouse 12 9 3",
+},
+ "When": {
+        "Weather": "snow"
+    }
+}, 
+
+]
+}

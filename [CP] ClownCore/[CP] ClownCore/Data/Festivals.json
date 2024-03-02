@@ -1,0 +1,50 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall3",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "FC.Maverick 23 37 2",
+                    "Delimiter": "/"
+                },
+                     {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "FC.Maverick 18 25 2",
+                    "Delimiter": "/"
+                     }
+        ]
+    },
+                  {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "FC.Maverick 68 98 2",
+                    "Delimiter": "/"
+                }
+        ]
+    },
+            {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall3,Data/Festivals/fall16",
+     "Entries": {
+"FC.Maverick": "{{i18n:FC.MaverickFestival}}",
+}
+ },
+  ]
+}

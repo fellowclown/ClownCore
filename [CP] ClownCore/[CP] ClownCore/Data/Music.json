@@ -1,0 +1,18 @@
+{
+"Changes": [
+ {
+"Action": "EditData",
+"Target": "Data/AudioChanges",
+"Entries": {
+"Fellowclown.ClownCore_Dodo": {
+"ID": "Fellowclown.ClownCore_Dodo",
+"Category": "Music",
+"FilePaths": [ "{{AbsoluteFilePath: Assets/Music/Dodo.ogg}}" ],
+"StreamedVorbis": true,
+"Looped": false
+}
+}
+},
+
+]
+}

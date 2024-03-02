@@ -1,0 +1,28 @@
+{
+   "Changes": [
+      {
+"LogName": "Farmhouse Visits",
+"Action": "EditData",
+"Target": "mistyspring.farmhousevisits/Schedules",
+"Entries": {
+"{{TargetWithoutPath}}": {
+"From": 1000, //start hour
+"To": 1300, //end hour. if empty, defaults to max visit time
+"EntryQuestion": "{{i18n:FarmhouseVisit.EntryQuestion.{{TargetWithoutPath}}}}", //text when knocking (optional)
+"EntryBubble": "{{i18n:FarmhouseVisit.EntryBubble.{{TargetWithoutPath}}}}",  //text over head (optional)
+"EntryDialogue": "{{i18n:FarmhouseVisit.EntryDialogue.{{TargetWithoutPath}}}}", //text after entering
+"ExitDialogue": "{{i18n:FarmhouseVisit.ExitDialogue.{{TargetWithoutPath}}}}",  //text when leaving
+"Dialogues":  //dialogues (loaded every 10 min (optional))
+[
+"{{i18n:FarmhouseVisit.Dialogue1.{{TargetWithoutPath}}}}",,
+"{{i18n:FarmhouseVisit.Dialogue2.{{TargetWithoutPath}}}}",
+"{{i18n:FarmhouseVisit.Dialogue3.{{TargetWithoutPath}}}}",
+]
+}
+},
+"When": {
+ "HasMod |contains=mistyspring.farmhousevisits": true//contentpatcher conditions
+}
+},
+   ]
+}

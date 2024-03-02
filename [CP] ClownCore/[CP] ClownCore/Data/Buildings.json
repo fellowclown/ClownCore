@@ -1,0 +1,219 @@
+{
+"Changes": [
+                {
+"LogName": "Tropical House Map",
+"Action": "Load",
+"Target": "Maps/FC.TropicalAnimalHouseMap",
+"FromFile": "Assets/Buildings/{{TargetWithoutPath}}.tbin",
+},
+        {
+"LogName": "Tilesheets",
+"Action": "Load",
+"Target": "Buildings/FC.TropicalAnimalHouse",
+"FromFile": "Assets/Buildings/{{TargetWithoutPath}}.png",
+},
+{
+"Action": "EditData",
+"Target": "Data/Buildings",
+"Entries": {
+"{{ModId}}_TropicalHutch": {
+    "Name": "{{i18n:FC.Tropicalhutch}}",
+    "Description": "{{i18n:FC.Tropicalhutch.Desc}}",
+    "Texture": "Buildings\\FC.TropicalAnimalHouse",
+    "Skins": [],
+    "DrawShadow": true,
+    "UpgradeSignTile": "4.5, 2",
+    "UpgradeSignHeight": 31.0,
+    "Size": {
+      "X": 7,
+      "Y": 4
+    },
+    "FadeWhenBehind": true,
+    "SourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 112,
+      "Height": 112
+    },
+    "SeasonOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "DrawOffset": "0, 0",
+    "SortTileOffset": 0.0,
+    "CollisionMap": null,
+    "AdditionalPlacementTiles": null,
+    "BuildingType": null,
+    "Builder": "Robin",
+    "BuildCondition": null,
+    "BuildDays": 2,
+    "BuildCost": 25000,
+    "BuildMaterials": [
+      {
+        "ItemId": "(O)388",
+        "Amount": 550
+      },
+      {
+        "ItemId": "(O)390",
+        "Amount": 300
+      }
+    ],
+    "BuildingToUpgrade": null,
+    "MagicalConstruction": false,
+    "BuildMenuDrawOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "HumanDoor": {
+      "X": 1,
+      "Y": 3
+    },
+    "AnimalDoor": {
+      "X": 4,
+      "Y": 3,
+      "Width": 2,
+      "Height": 1
+    },
+    "AnimalDoorOpenDuration": 0.4,
+    "AnimalDoorOpenSound": "doorCreak",
+    "AnimalDoorCloseDuration": 0.6,
+    "AnimalDoorCloseSound": "doorCreakReverse",
+    "NonInstancedIndoorLocation": null,
+    "IndoorMap": "FC.TropicalAnimalHouseMap",
+    "IndoorMapType": "StardewValley.AnimalHouse",
+    "MaxOccupants": 12,
+    "ValidOccupantTypes": [
+      "{{ModId}}_TropicalHutch",
+    ],
+    "AllowAnimalPregnancy": true,
+    "IndoorItems": [
+      {
+        "Id": "Default_FeedHopper",
+        "ItemId": "(BC)99",
+        "Tile": {
+          "X": 11,
+          "Y": 3
+        },
+        "Indestructible": true
+      },
+        {
+        "Id": "Default_Incubator",
+        "ItemId": "(BC)101",
+        "Tile": {
+          "X": 8,
+          "Y": 3
+        },
+        "Indestructible": true
+      },
+       {
+        "Id": "Default_Incubator",
+        "ItemId": "(BC)101",
+        "Tile": {
+          "X": 9,
+          "Y": 3
+        },
+        "Indestructible": true
+      }
+    ],
+    "AddMailOnBuild": null,
+    "Metadata": {},
+    "ModData": {},
+    "HayCapacity": 0,
+    "Chests": null,
+    "DefaultAction": null,
+    "AdditionalTilePropertyRadius": 0,
+    "ActionTiles": [],
+    "TileProperties": [],
+    "ItemConversions": null,
+    "DrawLayers": [
+      {
+        "Id": "Default_AnimalDoor_Bottom",
+        "Texture": null,
+        "SourceRect": {
+          "X": 0,
+          "Y": 112,
+          "Width": 32,
+          "Height": 16
+        },
+        "DrawPosition": "64, 96",
+        "DrawInBackground": false,
+        "SortTileOffset": 0.02,
+        "OnlyDrawIfChestHasContents": null,
+        "FrameDuration": 90,
+        "FrameCount": 1,
+        "FramesPerRow": -1,
+        "AnimalDoorOffset": {
+          "X": 0,
+          "Y": -19
+        }
+      },
+      {
+        "Id": "Default_AnimalDoor_Top",
+        "Texture": null,
+        "SourceRect": {
+          "X": 0,
+          "Y": 112,
+          "Width": 32,
+          "Height": 12
+        },
+        "DrawPosition": "64, 84",
+        "DrawInBackground": false,
+        "SortTileOffset": 0.02,
+        "OnlyDrawIfChestHasContents": null,
+        "FrameDuration": 90,
+        "FrameCount": 1,
+        "FramesPerRow": -1,
+        "AnimalDoorOffset": {
+          "X": 0,
+          "Y": -19
+        }
+      },
+      {
+        "Id": "Default_AnimalDoor_Open_Top",
+        "Texture": null,
+        "SourceRect": {
+          "X": 32,
+          "Y": 112,
+          "Width": 32,
+          "Height": 16
+        },
+        "DrawPosition": "64, 80",
+        "DrawInBackground": false,
+        "SortTileOffset": 1.0,
+        "OnlyDrawIfChestHasContents": null,
+        "FrameDuration": 90,
+        "FrameCount": 1,
+        "FramesPerRow": -1,
+        "AnimalDoorOffset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      {
+        "Id": "Default_AnimalDoor_Open_Bottom",
+        "Texture": null,
+        "SourceRect": {
+          "X": 64,
+          "Y": 112,
+          "Width": 32,
+          "Height": 16
+        },
+        "DrawPosition": "64, 96",
+        "DrawInBackground": false,
+        "SortTileOffset": 1.0,
+        "OnlyDrawIfChestHasContents": null,
+        "FrameDuration": 90,
+        "FrameCount": 1,
+        "FramesPerRow": -1,
+        "AnimalDoorOffset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    ],
+    "CustomFields": {}
+  },
+}
+}
+]
+}

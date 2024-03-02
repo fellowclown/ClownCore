@@ -1,0 +1,32 @@
+{
+"Changes": [
+{
+"LogName": "Dialgoue",
+"Action": "Load",
+"Target": "Characters/Dialogue/FC.Maverick,Character/Dialogue/FC.CaveBlock",
+"FromFile": "Data/Empty.json",
+},
+
+
+  /************************************************
+ **  Dialogues
+ ************************************************/ 
+{
+  "Action": "EditData",
+  "Target": "Characters/Dialogue/FC.Maverick",
+  "Entries": {
+// BASIC + VANILLA
+"Introduction": "{{i18n:Introduction.Maverick}}",
+// GENERIC 
+"Mon": "{{i18n:Mon.Maverick.{{season}}}}",
+"Tue": "{{i18n:Tue.Maverick.{{season}}}}",
+"Wed": "{{i18n:Wed.Maverick.{{season}}}}",
+"Thu": "{{i18n:Thu.Maverick.{{season}}}}",
+"Fri": "{{i18n:Fri.Maverick.{{season}}}}",
+"Sat": "{{i18n:Sat.Maverick.{{season}}}}",
+"Sun": "{{i18n:Sun.Maverick.{{season}}}}",
+ }
+},
+
+]
+}

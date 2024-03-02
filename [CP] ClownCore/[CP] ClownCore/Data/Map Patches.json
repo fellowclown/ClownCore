@@ -1,0 +1,92 @@
+{
+"Changes": [
+
+       {
+ "LogName": "OldGraveYardStatueMoved",
+ "Action": "EditMap",
+ "Target": "Maps/{{ModID}}_OldGraveYard",
+ "FromFile": "Assets/Maps/Map Patches/OldGraveYardStatueMoved.tbin",
+"Update": "OnTimeChange, OnLocationChange",
+ "ToArea": { "X": 26, "Y": 3, "Width": 4, "Height": 5 },
+ "When": {
+          "HasSeenEvent |contains=Fellowclown.ClownCore_CaveBlockUnlock": true,
+            }
+        },
+{
+"LogName": "Core Map Entrance-VanillaOnly-True",
+ "Action": "EditMap",
+ "Target": "Maps/Mountain",
+ "FromFile": "Assets/Maps/Map Patches/MountainSDV.tbin",
+"When": {
+ 
+"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+},
+ "ToArea": { "X": 63, "Y": 0, "Width": 13, "Height": 11 },
+ "TextOperations": [
+{
+ "Operation": "Append",
+ "Target": ["MapProperties", "Warp"],
+ "Value": "70 0 {{ModID}}_NewGraveYard 37 18 71 0 {{ModID}}_NewGraveYard 37 19",
+ "Delimiter": " "
+}
+]  
+},   	
+{
+"LogName": "Add custom Tilesheets to farmhouse",
+"Action": "EditMap",
+"Target": "Maps/FarmHouse,Maps/FarmHouse2, Maps/FarmHouse2_marriage, Maps/FarmHouse1_marriage",
+"FromFile": "Assets/Maps/Map Patches/farmhouse-tilesheets.tbin",
+"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1 },
+"ToArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1 },
+ "PatchMode": "Overlay"
+},
+ ////////////////////not changed by any mod additions////////////////////
+{
+"LogName": "FlowerFestival ",
+ "Action": "EditMap",
+ "Target": "Maps/Forest-FlowerFestival",
+ "FromFile": "Assets/Maps/Map Patches/FlowerDancePatch.tbin",
+ "ToArea": { "X": 0, "Y": 0, "Width": 24, "Height": 20 },
+},
+ {
+ "LogName": "Luau",
+ "Action": "EditMap",
+ "Target": "Maps/Beach-Luau",
+ "FromFile": "Assets/Maps/Map Patches/LuauPatch.tbin",
+ "ToArea": { "X": 14, "Y": 25, "Width": 10, "Height": 10 },
+},
+ {
+ "LogName": "Jellies",
+ "Action": "EditMap",
+ "Target": "Maps/Beach-Jellies",
+ "FromFile": "Assets/Maps/Map Patches/BeachFestivalsPatch.tbin",
+ "ToArea": { "X": 14, "Y": 25, "Width": 10, "Height": 10 },
+},
+ {
+ "LogName": "Jellies",
+ "Action": "EditMap",
+ "Update": "OnTimeChange, OnLocationChange",
+ "Target": "Maps/Beach",
+ "FromFile": "Assets/Maps/Map Patches/JelliesPatch.tbin",
+ "ToArea": { "X": 14, "Y": 25, "Width": 10, "Height": 10, 
+},
+"When": {
+"DayEvent": "dance of the moonlight jellies",
+}
+},
+ {
+ "LogName": "TownFair",
+ "Action": "EditMap",
+ "Target": "Maps/Town-Fair",
+ "FromFile": "Assets/Maps/Map Patches/FairPatch.tbin",
+ "ToArea": { "X": 55, "Y": 89, "Width": 21, "Height": 17 },
+},
+ {
+ "LogName": "IceFestival",
+ "Action": "EditMap",
+ "Target": "Maps/Forest-IceFestival",
+ "FromFile": "Assets/Maps/Map Patches/IceFestivalPatch.tbin",
+ "ToArea": { "X": 31, "Y": 18, "Width": 22, "Height": 26 },
+},
+]
+}

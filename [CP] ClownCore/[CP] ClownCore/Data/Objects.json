@@ -1,0 +1,205 @@
+{
+    "Changes": [
+{
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/Objects,Mods/{{ModID}}/Shirts",
+            "FromFile": "Assets/Objects/{{TargetWithoutPath}}.png"
+        },
+                {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+ "{{ModID}}_StatueGem": {
+    "Name": "{{ModID}}_StatueGem",
+    "DisplayName": "{{i18n:FC.StatueGem}}",
+    "Description": "{{i18n:FC.StatueGem.Desc}}",
+    "Type": "Quest",
+    "Category": -24,
+     "Price": -1,
+    "ExcludeFromPerfectionShipping": true,
+      "Buff": {
+      "BuffId": null,
+      "Duration": 0,
+      "CustomAttributes": {}
+    },
+     "Texture": "Mods/{{ModID}}/Objects",
+    "SpriteIndex": 3
+  },
+}
+},
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+ "{{ModID}}_SpeedFruit": {
+    "Name": "{{ModID}}_SpeedFruit",
+    "DisplayName": "{{i18n:FC.SpeedFruit}}",
+    "Description": "{{i18n:FC.SpeedFruit.Desc}}",
+    "Type": "Fruit",
+    "Category": -79,
+     "Price": 1,
+    "Edibility": 1,
+    "IsDrink": false,
+    "ExcludeFromPerfectionShipping": true,
+      "Buff": {
+      "BuffId": "{{i18n:FC.SpeedFruit.Buff}}",
+      "Duration": 0,
+      "CustomAttributes": {
+        "FarmingLevel": 0,
+        "FishingLevel": 0,
+        "MiningLevel": 0,
+        "LuckLevel": 5,
+        "ForagingLevel": 0,
+        "MaxStamina": 0,
+        "MagneticRadius": 0,
+        "Speed": 5,
+        "Defense": 0,
+        "Attack": 0
+      }
+    },
+     "Texture": "Mods/{{ModID}}/Objects",
+    "SpriteIndex": 2
+  },
+}
+},
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+  "{{ModID}}_FrenchDodoEgg": {
+    "Name": "{{ModID}}_FrenchDodoEgg",
+    "DisplayName": "{{i18n:FC.FrenchDodoEgg}}",
+    "Description": "{{i18n:FC.FrenchDodoEgg.desc}}",
+    "Type": "Basic",
+    "Category": 3,
+     "Price": 250,
+    "Edibility": 3,
+    "IsDrink": false,
+    "ExcludeFromPerfectionShipping": true,
+    "Buff": {
+      "BuffId": null,
+      "Duration": 0,
+      "CustomAttributes": {
+        "FarmingLevel": 0,
+        "FishingLevel": 0,
+        "MiningLevel": 0,
+        "LuckLevel": 0,
+        "ForagingLevel": 0,
+        "MaxStamina": 0,
+        "MagneticRadius": 0,
+        "Speed": 0,
+        "Defense": 0,
+        "Attack": 0
+      }
+    },
+    "Texture": "Mods/{{ModID}}/Objects",
+    "SpriteIndex": 0
+  },
+},
+},
+  {
+"Action": "EditData",
+"Target": "Data/Shirts",
+"Entries": {
+"{{ModID}}_Shirt1": {
+"Name": "{{ModID}}_Shirt1",
+"DisplayName": "{{i18n:FC.ClownCore.Shirt1}}",
+"Description": "{{i18n:FC.ClownCore.Shirt1.Desc}}",
+"Price": 50,
+"Texture": "Mods/{{ModID}}/Shirts",
+"SpriteIndex": 0,
+"DefaultColor": null,
+"CanBeDyed": false,
+"IsPrismatic": false,
+"HasSleeves": true,
+"CanChooseDuRingCharacterCustomization": false,
+"CustomFields": {}
+  },
+}
+  },
+    {
+"Action": "EditData",
+"Target": "Data/Shops",
+"Entries":
+{
+"Fellowclown.CC_Shop": {
+"Owners": [
+{
+"Name": "None",
+"Dialogues": [
+// dialogue any other time
+{
+  "Id": "Fellowclown.CC_Shop",
+  "Dialogue": "{{i18n:FC.DodoShop}}"
+},
+]
+},
+],
+"Items": [
+{
+"Id": "(O){{ModID}}_FrenchDodoEgg",
+"Condition": null,
+"Price": 50000,
+"TradeItemId": null,
+"TradeItemAmount": 0,
+"ItemId": "(O){{ModID}}_FrenchDodoEgg",
+"AvailableStock":1,
+"AvailableStockLimit": "player"
+},
+]
+}
+}
+},
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_BoneyHeadedGraveFish": { //identity of the fish
+          "Name": "{{ModID}}_BoneyHeadedGraveFish", //ditto
+          "DisplayName": "{{i18n:FC.BoneyHeadedGraveFish}}", //i18n
+          "Description": "{{i18n:FC.BoneyHeadedGraveFish.Desc}}",
+          "Type": "Fish", //what it is
+          "Category": -4, //fish category is 4
+          "ExcludeFromRandomSale": true, //no one can randomly sell my fish
+          "ExcludeFromShippingCollection": true, //perfection exclusion
+          "ExcludeFromFishingCollection": true, //perfection exclusion
+          "Price": 2500, //price fish is worth
+          "Edibility": -10, //positive number provides life
+          "IsDrink": false, //do not drink fish
+          "Texture": "Mods/{{ModID}}/Objects", //where to find my fish sprite
+          "SpriteIndex": 4, //spot on the sheet it is located
+          "ContextTags": [ //these are what can be referenced so the fish kind, where it can be caught, and it's color for dying things
+            "color_purple",
+            "fish_boneyheadedgravefish",
+            "fish_legendary"
+          ]
+        }
+      }
+    },
+     {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_IficusFish": { //identity of the fish
+          "Name": "{{ModID}}_IficusFish", //ditto
+          "DisplayName": "{{i18n:FC.Ificus}}", //i18n
+          "Description": "{{i18n:FC.Ificus.Desc}}",
+          "Type": "Fish", //what it is
+          "Category": -4, //fish category is 4
+          "ExcludeFromRandomSale": true, //no one can randomly sell my fish
+          "ExcludeFromShippingCollection": true, //perfection exclusion
+          "ExcludeFromFishingCollection": true, //perfection exclusion
+          "Price": 100, //price fish is worth
+          "Edibility": 10, //positive number provides life
+          "IsDrink": false, //do not drink fish
+          "Texture": "Mods/{{ModID}}/Objects", //where to find my fish sprite
+          "SpriteIndex": 5, //spot on the sheet it is located
+          "ContextTags": [ //these are what can be referenced so the fish kind, where it can be caught, and it's color for dying things
+            "color_brown",
+            "fish_IficusFish",
+          ]
+        }
+      }
+    }
+]
+}

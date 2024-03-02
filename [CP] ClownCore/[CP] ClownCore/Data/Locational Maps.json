@@ -1,0 +1,294 @@
+{
+"Changes": [
+     {
+"Action": "EditData",
+"Target": "Data/Locations",
+"TargetField": [ "Forest","Forage" ],
+"Entries": {
+"(O){{ModID}}_StatueGem": {
+"ItemId": "{{ModID}}_StatueGem",
+"Chance": "0.001"
+}
+}
+},
+	{
+"LogName": "Tilesheets",
+"Action": "Load",
+"Target": "Maps/Fellowclown_AnimalRefuge,Maps/Fellowclown_mine_frost_dangerous,Maps/spring_Fellowclown_Outdoors,Maps/summer_Fellowclown_Outdoors,Maps/fall_Fellowclown_Outdoors,Maps/winter_Fellowclown_Outdoors,Maps/spring_Fellowclown_Indoors,Maps/summer_Fellowclown_Indoors,Maps/fall_Fellowclown_Indoors,Maps/winter_Fellowclown_Indoors,",
+"FromFile": "Assets/Maps/Tilesheets/{{TargetWithoutPath}}.png",
+},
+
+	  {
+"LogName": "Load Location Maps",
+"Action":"Load",
+"Target":"Maps/{{ModID}}_SecretCave,Maps/{{ModID}}_OldGraveYard,Maps/{{ModID}}_NewGraveYard,Maps/{{ModID}}_MavericksHouse",
+"FromFile":"Assets/Maps/Locational Maps/{{TargetWithoutPath}}.tbin",
+},
+	  {
+"LogName": "Load Location Maps",
+"Action":"Load",
+"Target":"Maps/Fellowclown.ClownCore_OldGraveYardTemp",
+"FromFile":"Assets/Maps/Event Maps/{{TargetWithoutPath}}.tbin",
+},
+{
+"LogName": "TempMap",
+"Action": "EditData",
+"Target": "Data/Locations",
+"Entries": {
+"{{ModID}}_SecretCave": {
+"DisplayName": "{{i18n:MapName.SecretCave}}",
+"CreateOnLoad": {
+"MapPath": "Maps/{{ModID}}_SecretCave"
+},
+"DefaultArrivalTile": {
+"X": 6,
+"Y": 14
+},
+"ExcludeFromNpcPathfinding": false,
+"ArtifactSpots": [],
+"FishAreas": {},
+"Fish": [],
+"Forage": [],
+"CustomFields": {}
+}
+},
+},
+{
+"LogName": "Mavericks House",
+"Action": "EditData",
+"Target": "Data/Locations",
+"Entries": {
+"{{ModID}}_MavericksHouse": {
+"DisplayName": "{{i18n:MapName.maverickshouse}}",
+"CreateOnLoad": {
+"MapPath": "Maps/{{ModID}}_MavericksHouse"
+},
+"DefaultArrivalTile": {
+"X": 9,
+"Y": 14
+},
+"ExcludeFromNpcPathfinding": false,
+"ArtifactSpots": [],
+"FishAreas": {},
+"Fish": [],
+"Forage": [],
+"CustomFields": {}
+}
+},
+},
+{
+"LogName": "Pelican Town NewGraveYard",
+"Action": "EditData",
+"Target": "Data/Locations",
+"Entries": {
+"{{ModID}}_NewGraveYard": {
+"DisplayName": "{{i18n:MapName.newgraveyard}}",
+"CreateOnLoad": {
+"MapPath": "Maps/{{ModID}}_NewGraveYard"
+},
+"DefaultArrivalTile": {
+"X": 37,
+"Y": 19
+},
+"ExcludeFromNpcPathfinding": false,
+"ArtifactSpots": [],
+"FishAreas": {},
+"Fish": [],
+"Forage": [],
+"CustomFields": {}
+}
+},
+},
+{
+"LogName": "Pelican Town GraveYard",
+"Action": "EditData",
+"Target": "Data/Locations",
+"Entries": {
+"{{ModID}}_OldGraveYard": {
+"DisplayName": "{{i18n:MapName.oldgraveyard}}",
+"CreateOnLoad": {
+"MapPath": "Maps/{{ModID}}_OldGraveYard"
+},
+"DefaultArrivalTile": {
+"X": 39,
+"Y": 63
+},
+"ExcludeFromNpcPathfinding": false,
+"ArtifactSpots": [
+    {
+        "Chance": 0.5,
+        "ApplyGenerousEnchantment": true,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "(O){{ModID}}_StatueGem",
+        "ItemId": "(O){{ModID}}_StatueGem",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": 1,
+        "MaxStack": 3,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "PerItemCondition": null
+      },
+    
+],
+"FishAreas": {
+"{{ModID}}_OldGraveYard": {
+"DisplayName": "{{i18n:MapName.oldgraveyard}}",
+"Position": null,
+					},
+},
+"Fish": [
+	{
+"Id": "{{ModID}}_BoneyHeadedGraveFish",
+"ItemId": "(O){{ModID}}_BoneyHeadedGraveFish",
+"FishaAreaID": "{{ModID}}_OldGraveYard",
+"Season": "Winter",
+"Chance": 0.2,
+"MinFishingLevel": 6,
+"CuriosityLureBuff": 0.05,
+"CatchLimit": 1,
+"IsBossFish": true,
+"Precedence": -100,
+"IgnoreFishDataRequirements": true,
+"CanBeInherited": false,
+"ChanceModifiers": null,
+"ChanceModifierMode": "Stack",
+"Condition": null,
+"RandomItemId": null,
+"MaxItems": null,
+"MinStack": -1,
+"MaxStack": -1,
+"Quality": -1,
+"ObjectInternalName": null,
+"ObjectDisplayName": null,
+"ToolUpgradeLevel": -1,
+"IsRecipe": false,
+"StackModifiers": null,
+"StackModifierMode": "Stack",
+"QualityModifiers": null,
+"QualityModifierMode": "Stack",
+"PerItemCondition": null
+},
+	{
+"Id": "{{ModID}}_IficusFish",
+"ItemId": "(O){{ModID}}_IficusFish",
+"FishaAreaID": "{{ModID}}_OldGraveYard",
+"Season": "Winter"
+}
+],
+"Forage": [],
+"CustomFields": {}
+}
+},
+},
+{
+"LogName": "Map Strings Edit",
+"Action": "EditData",
+"Target": "Strings/StringsFromMaps",
+"Entries": {
+"GraveYard.Waterfall": "{{i18n:GraveYard.Waterfall}}",
+"GraveYard.Ladder": "{{i18n:GraveYard.Ladder}}",
+"ClownCore.Dolls": "{{i18n:ClownCore.Dolls}}",
+"Clowncore.JuminoPlushies": "{{i18n:Clowncore.JuminoPlushies}}",
+"GraveYard.ShroomTable":"{{i18n:GraveYard.ShroomTable}}",
+"GraveYard.Lore":"{{i18n:GraveYard.Lore}}",
+"GraveYard.Sign": "{{i18n:GraveYard.Sign}}",
+"GraveYard.Wine": "{{i18n:GraveYard.Wine}}",
+"GraveYard.RoadBlock": "{{i18n:GraveYard.RoadBlock}}",
+"GraveYard.GhostFlower": "{{i18n:GraveYard.GhostFlower}}",
+"GraveYard.Frog": "{{i18n:GraveYard.Frog}}",
+"GraveYard.ElizasGrave": "{{i18n:GraveYard.ElizasGrave}}",
+"GraveYard.Campfire": "{{i18n:GraveYard.Campfire}}",
+"GraveYard.Trevor": "{{i18n:GraveYard.Trevor}}",
+"GraveYard.TropaTree": "{{i18n:GraveYard.TropaTree}}",
+"GraveYard.Techno": "{{i18n:GraveYard.Techno}}",
+"GraveYard.Squid": "{{i18n:GraveYard.Squid}}",
+"GraveYard.LargeFlower": "{{i18n:GraveYard.LargeFlower}}",
+"GraveYard.TreeGuest": "{{i18n:GraveYard.TreeGuest}}",
+"GraveYard.Gate": "{{i18n:GraveYard.Gate}}",
+"GraveYard.Fountain": "{{i18n:GraveYard.Fountain}}",
+"GraveYard.RestRoom": "{{i18n:GraveYard.RestRoom}}",
+"GraveYard.CaveBlock": "{{i18n:GraveYard.CaveBlock}}",
+"GraveYard.01": "{{i18n:GraveYard.01}}",
+"GraveYard.02": "{{i18n:GraveYard.02}}",
+"GraveYard.03": "{{i18n:GraveYard.03}}",
+"GraveYard.04": "{{i18n:GraveYard.04}}",
+"GraveYard.05": "{{i18n:GraveYard.05}}",
+"GraveYard.06": "{{i18n:GraveYard.06}}",
+"GraveYard.07": "{{i18n:GraveYard.07}}",
+"GraveYard.08": "{{i18n:GraveYard.08}}",
+"GraveYard.09": "{{i18n:GraveYard.09}}",
+"GraveYard.10": "{{i18n:GraveYard.10}}",
+"GraveYard.11": "{{i18n:GraveYard.11}}",
+"GraveYard.12": "{{i18n:GraveYard.12}}",
+"GraveYard.13": "{{i18n:GraveYard.13}}",
+"GraveYard.14": "{{i18n:GraveYard.14}}",
+"GraveYard.15": "{{i18n:GraveYard.15}}",
+"GraveYard.16": "{{i18n:GraveYard.16}}",
+"GraveYard.17": "{{i18n:GraveYard.17}}",
+"GraveYard.18": "{{i18n:GraveYard.18}}",
+"GraveYard.19": "{{i18n:GraveYard.19}}",
+"GraveYard.20": "{{i18n:GraveYard.20}}",
+"GraveYard.21": "{{i18n:GraveYard.21}}",
+"GraveYard.22": "{{i18n:GraveYard.22}}",
+"GraveYard.23": "{{i18n:GraveYard.23}}",
+"GraveYard.24": "{{i18n:GraveYard.24}}",
+"GraveYard.25": "{{i18n:GraveYard.25}}",
+"GraveYard.26": "{{i18n:GraveYard.26}}",
+"GraveYard.27": "{{i18n:GraveYard.27}}",
+"GraveYard.28": "{{i18n:GraveYard.28}}",
+"GraveYard.29": "{{i18n:GraveYard.29}}",
+"GraveYard.30": "{{i18n:GraveYard.30}}",
+"GraveYard.31": "{{i18n:GraveYard.31}}",
+"GraveYard.32": "{{i18n:GraveYard.32}}",
+"GraveYard.33": "{{i18n:GraveYard.33}}",
+"GraveYard.34": "{{i18n:GraveYard.34}}",
+"GraveYard.35": "{{i18n:GraveYard.35}}",
+"GraveYard.36": "{{i18n:GraveYard.36}}",
+"GraveYard.37": "{{i18n:GraveYard.37}}",
+"GraveYard.38": "{{i18n:GraveYard.38}}",
+"GraveYard.39": "{{i18n:GraveYard.39}}",
+"GraveYard.40": "{{i18n:GraveYard.40}}",
+"GraveYard.ForSale": "{{i18n:GraveYard.ForSale}}",
+"GraveYard.MavericksShed": "{{i18n:GraveYard.MavericksShed}}",
+"GraveYard.MavericksJar": "{{i18n:GraveYard.MavericksJar}}",
+"MavericksHouse.Fridge": "{{i18n:MavericksHouse.Fridge}}",
+"MavericksHouse.Sink":"{{i18n:MavericksHouse.Sink}}",
+"MavericksHouse.Stove":"{{i18n:MavericksHouse.Stove}}",
+"MavericksHouse.Counter":"{{i18n:MavericksHouse.Counter}}",
+"MavericksHouse.TV":"{{i18n:MavericksHouse.TV}}",
+"MavericksHouse.Trash":"{{i18n:MavericksHouse.Trash}}",
+"MavericksHouse.Coffee":"{{i18n:MavericksHouse.Coffee}}",
+"MavericksHouse.EndTable":"{{i18n:MavericksHouse.EndTable}}",
+"GraveYard.CaveWaterfall": "{{i18n:GraveYard.CaveWaterfall}}",
+"GraveYard.CaveWarrior": "{{i18n:GraveYard.CaveWarrior}}",
+"GraveYard.BrokenDoor": "{{i18n:GraveYard.BrokenDoor}}",
+"GraveYard.CaveWarriorUnlocked":"{{i18n:GraveYard.CaveWarriorUnlocked}}",
+"GraveYard.CaveWaterfallListen":"{{i18n:GraveYard.CaveWaterfallListen}}",
+"ClownCore.Buffet":"{{i18n:ClownCore.Buffet}}",
+"ClownCore.Preacher":"{{i18n:ClownCore.Preacher}}",
+"ClownCore.Soup":"{{i18n:ClownCore.Soup}}",
+"ClownCore.Girl&Mom":"{{i18n:ClownCore.Girl&Mom}}",
+"ClownCore.BabyHog":"{{i18n:ClownCore.BabyHog}}",
+"ClownCore.Hog":"{{i18n:ClownCore.Hog}}",
+"ClownCore.WeirdCows":"{{i18n:ClownCore.WeirdCows}}",
+"ClownCore.Dodos":"{{i18n:ClownCore.Dodos}}",
+"ClownCore.FrogFair":"{{i18n:ClownCore.FrogFair}}",
+"Hutch.Planter":"{{i18n:Hutch.Planter}}",
+"Hutch.Berries":"{{i18n:Hutch.Berries}}",
+"Hutch.Pond":"{{i18n:Hutch.Pond}}",
+"GraveYard.Door": "{{i18n:GraveYard.Door}}",
+}
+},
+]
+}

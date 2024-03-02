@@ -1,0 +1,40 @@
+{
+    "Changes": [
+            {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                
+                "{{ModId}}_ClownCoreWarpTotem": { 
+                    "Name": "{{ModId}}_ClownCoreWarpTotem", 
+                    "DisplayName": "Passerby Totem", 
+                    "Description": "Warp you to Passerby Cemetery.", 
+                    "Type": "Basic",
+                    "Category": 0,
+                    "Edibility": -300,
+                    "Price": -1,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 1,
+                    "ContextTags": [
+                        "totem_item",
+                        "not_placeable"
+                    ]
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": {
+                // The totem ID, change it to match the above item's id
+                "{{ModId}}_ClownCoreWarpTotem": {
+                    "TotemWarp": {
+                        "Location": "Fellowclown.ClownCore_NewGraveYard", // The id of the location you want to warp to
+                        "Position": "37, 19", // The X Y coordinate
+                        "Color": { "R": 0, "G": 0, "B": 0, "A": 0 } // Color
+                    }
+                }
+            }
+        }
+    ]
+}

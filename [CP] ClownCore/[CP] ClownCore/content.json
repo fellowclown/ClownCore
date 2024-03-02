@@ -1,0 +1,14 @@
+{
+"Format":"2.0.0",
+
+"Changes":[
+/************************************************
+ ** Includes
+ ************************************************/
+ {
+"LogName": "Data Information",
+"Action": "Include",
+"FromFile": "Data/Music.json,Data/Fish.json,Data/Buildings.json,Data/Shops.json,Data/Festivals.json,Data/Totems.json,Data/MailTriggers.json,Data/BuyableFarmAnimals.json,Data/Map Patches.json,Data/Objects.json,Data/Locational Maps.json,Data/Dialogue.json,Data/DispositionsGiftTaste.json,Data/Events.json,Data/ModCompact.json,Data/Movies.json,Data/Schedules.json"
+ },
+],
+}

@@ -1,0 +1,25 @@
+{
+    "Changes": [
+     {
+"LogName": "Marriage Dialogue",
+"Action": "Load",
+"Target": "Data/Events/{{ModID}}_OldGraveYard,Data/Events/{{ModID}}_NewGraveYard,Data/Events/{{ModID}}_ZooEfforts",
+"FromFile": "Data/Empty.json",
+ },
+   {
+"Action": "EditData",
+"Target": "Data/Events/Fellowclown.ClownCore_OldGraveYard",
+"Entries": {
+  "{{ModID}}_AltarOffering": "none/-1000 -1000/farmer 17 21 2/viewport 17 19 clamp true/pause 900/question fork0 \"{{i18n:BlessedFruitEvent.1}}#{{i18n:BlessedFruitEvent.2}}#{{i18n:BlessedFruitEvent.3}}#\"/fork FC.YesFruit/end position 17 21",
+  "FC.YesFruit": "showFrame farmer 3/playSound stardrop/glow 00 255 4000/farmerEat {{ModID}}_SpeedFruit/message \"{{i18n:BlessedFruitEvent.4}}\"/action addmoney -200/end position 17 21",
+  }, 
+        },
+           {
+"Action": "EditData",
+"Target": "Data/Events/{{ModID}}_OldGraveYard",
+"Entries": {
+  "{{ModID}}_CaveBlockUnlock/hasItem {{ModID}}_StatueGem/tile 28 7": "none/-1000 -1000/farmer 28 7 0/viewport 28 7 clamp true/removeTile 28 6 Buildings/removeTile 28 5 Buildings/addTemporaryActor FC.CaveBlock 16 32 28 6 2 false Character/pause 900/emote farmer 40/pause 100/message \"You insert the gem into the statues chest.\"/showFrame FC.CaveBlock 3/pause 200/showFrame FC.CaveBlock 2/playSound toolCharge/shake FC.CaveBlock 1000/showFrame FC.CaveBlock 1/pause 100/move farmer 0 3 0/positionOffset FC.CaveBlock 0 20/pause 200/positionOffset FC.CaveBlock 0 20/pause 200/positionOffset FC.CaveBlock 0 20/pause 200/positionOffset FC.CaveBlock 0 20/pause 200/positionOffset FC.CaveBlock 20 0/pause 200/positionOffset FC.CaveBlock 20 0/pause 100/positionOffset FC.CaveBlock 18 0/pause 200/positionOffset FC.CaveBlock 20 0/showFrame FC.CaveBlock 3/playSound reward/pause 100/message \"What could be inside there?\"/move farmer 0 -4 0/pause 300/globalFade/viewport -1000 -1000/warp farmer 6 13/changeLocation {{ModID}}_SecretCave/addTemporaryActor FC.DodoBaby 16 16 7 6 2 false Character/viewport 10 9/pause 100/move farmer 0 -2 0/faceDirection farmer 1/faceDirection farmer 3/faceDirection farmer 0/pause 200/message \"{{i18n:FoundDodoEgg.00}}\"/move farmer 0 -3 0/move farmer 1 0 0/move farmer 0 -1 0/warp FC.DodoBaby -3000 -3000/itemAboveHead Fellowclown.ClownCore_FrenchDodoEgg/playSound shwip/message \"{{i18n:FoundDodoEgg.01}}\"/viewport move 1 -1 6000000/globalFade/viewport -1000 -1000/addItem Fellowclown.ClownCore_FrenchDodoEgg/removeItem {{ModID}}_StatueGem/end"
+  }, 
+        },
+    ]
+}

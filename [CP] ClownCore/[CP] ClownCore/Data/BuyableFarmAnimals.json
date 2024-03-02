@@ -1,0 +1,617 @@
+{
+    "Changes": [
+        {
+"LogName": "Farmanimals",
+"Action": "Load",
+"Target": "Animals/FC.ArkaGoat_Adult,Animals/FC.ArkaGoat_Baby,Animals/FC.ArkaTapi_Adult_Black,Animals/FC.ArkaTapi_Adult_Brown,Animals/FC.ArkaTapi_Adult_Pale,Animals/FC.ArkaTapi_Adult_Red,Animals/FC.ArkaCow_Adult_Black,Animals/FC.ArkaCow_Adult_Brown,Animals/FC.ArkaCow_Adult_Pale,Animals/FC.ArkaCow_Adult_Red,Animals/FC.ArkaCow_Baby_Black,Animals/FC.ArkaCow_Baby_Brown,Animals/FC.ArkaCow_Baby_Pale,Animals/FC.ArkaCow_Baby_Red,Animals/FC.ArkaHorse_Adult,Animals/FC.ArkaHorse_Baby,Animals/FC.Movoraptor_Blue_Adult,Animals/FC.Movoraptor_Pale_Adult,Animals/FC.Movoraptor_Pink_Adult,Animals/FC.Movoraptor_Purple_Adult,Animals/FC.Movoraptor_Blue_Baby,Animals/FC.Movoraptor_Pale_Baby,Animals/FC.Movoraptor_Pink_Baby,Animals/FC.Movoraptor_Purple_Baby,Animals/FC.FrenchDodo_Adult_Gray,Animals/FC.FrenchDodo_Baby_Gray,Animals/FC.FrenchDodo_Adult_Black,Animals/FC.FrenchDodo_Baby_Black,Animals/FC.FrenchDodo_Adult_Blue,Animals/FC.FrenchDodo_Baby_Blue",
+"FromFile": "Assets/Animals/{{TargetWithoutPath}}.png", 
+ },
+ {
+ "LogName": "ArkaGoat",
+"Action": "EditData",
+"Target": "Data/FarmAnimals",
+"Entries": {
+"Fellowclown.ClownCore_ArkaGoat": {
+    "DisplayName": "{{i18n:FC.ArkaGoat}}",
+    "House": "Fellowclown.ClownCore_TropicalHutch",
+    "Gender": "MaleOrFemale",
+    "PurchasePrice": 10000,
+    "SellPrice": 3000,
+    "ShopTexture": "LooseSprites\\FC.ArkaGoat_Icon",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 32,
+      "Height": 16
+    },
+    "ShopDisplayName": "{{i18n:FC.ArkaGoat}}",
+    "ShopDescription": "{{i18n:FC.ArkaGoat.Desc}}",
+    "ShopMissingBuildingDescription": "{{i18n:FC.MissingTropicalHutch}}",
+    "RequiredBuilding": "Fellowclown.ClownCore_TropicalHutch",
+    "UnlockCondition": "PLAYER_HAS_SEEN_EVENT Current Fellowclown.ClownCore_UnlockArkaAnimals",
+    "AlternatePurchaseTypes": null,
+    "EggItemIds": null,
+    "IncubationTime": -1,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": "{{i18n:FC.ArkaGoatBirth}}",
+    "DaysToMature": 10,
+    "CanGetPregnant": true,
+    "DaysToProduce": 6,
+    "HarvestType": "DropOvernight",
+    "HarvestTool": null,
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "440"
+      }
+    ],
+    "DeluxeProduceItemIds": [],
+    "ProduceOnMature": true,
+    "FriendshipForFasterProduce": -1,
+    "DeluxeProduceMinimumFriendship": 200,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "ProfessionForHappinessBoost": 3,
+    "ProfessionForQualityBoost": 3,
+    "ProfessionForFasterProduce": -1,
+    "Sound": "goat",
+    "BabySound": "goat",
+    "Texture": "Animals\\FC.ArkaGoat_Adult",
+    "HarvestedTexture": null,
+    "BabyTexture": "Animals\\FC.ArkaGoat_Baby",
+    "UseFlippedRightForLeft": true,
+    "SpriteWidth": 32,
+    "SpriteHeight": 32,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "Skins": [
+          ],
+    "ShadowWhenBaby" :
+   {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdult" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenBabySwims" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdultSwims" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+    "CanSwim": false,
+    "BabiesFollowAdults": true,
+    "GrassEatAmount": 4,
+    "HappinessDrain": 3,
+    "UpDownPetHitboxTileSize": "1.5, 1.75",
+    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+    "StatToIncrementOnProduce": null,
+    "ShowInSummitCredits": false,
+    "CustomFields": {}
+  },
+},
+      "When": {
+                "HasMod: |contains=Fellowclown.TW": true, 
+             }
+},
+  {
+"LogName": "Shop Icons",
+"Action": "Load",
+"Target": "LooseSprites/FC.ArkaGoat_Icon,LooseSprites/FC.FrenchDodo_Icon,LooseSprites/FC.ArkaCow_Icon,LooseSprites/FC.Movo_Icon,LooseSprites/FC.Tapi_Icon",
+"FromFile": "Assets/Animals/{{TargetWithoutPath}}.png", 
+ },
+ {
+ "LogName": "Movoraptor",
+"Action": "EditData",
+"Target": "Data/FarmAnimals",
+"Entries": {
+"Fellowclown.ClownCore_Movoraptor": {
+    "DisplayName": "{{i18n:FC.Movoraptor}}",
+    "House": "Fellowclown.ClownCore_TropicalHutch",
+    "Gender": "Female",
+    "PurchasePrice": 2500,
+    "SellPrice": 1000,
+    "ShopTexture": "LooseSprites\\FC.Movo_Icon",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 32,
+      "Height": 16
+    },
+    "ShopDisplayName": "{{i18n:FC.Movoraptor}}",
+    "ShopDescription": "{{i18n:FC.Movoraptor.desc}}",
+    "ShopMissingBuildingDescription":  "{{i18n:FC.MissingTropicalHutch}}",
+    "RequiredBuilding": "Fellowclown.ClownCore_TropicalHutch",
+    "UnlockCondition": "PLAYER_HAS_SEEN_EVENT Current Fellowclown.ClownCore_UnlockArkaAnimals",
+    "AlternatePurchaseTypes": null,
+  "EggItemIds": [ "Fellowclown.ClownCore_MovoraptorEgg" ],
+   "IncubationTime": 1900,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": "{{i18n:FC.MovoraptorHatch}}",
+    "DaysToMature": 13,
+    "CanGetPregnant": false,
+    "DaysToProduce": 7,
+    "HarvestType": "DropOvernight",
+    "HarvestTool": null,
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "Fellowclown.TW_MovoraptorEgg"
+      }
+    ],
+    "DeluxeProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 1200,
+        "ItemId": "Fellowclown.TW_ArkaCoin"
+      }
+    ],
+    "ProduceOnMature": true,
+    "FriendshipForFasterProduce": -1,
+    "DeluxeProduceMinimumFriendship": 450,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "ProfessionForHappinessBoost": 3,
+    "ProfessionForQualityBoost": 3,
+    "ProfessionForFasterProduce":-1,
+    "Sound": "Fellowclown.TW_Movoraptor",
+    "BabySound": "Fellowclown.TW_Movoraptor",
+    "Texture": "Animals\\FC.Movoraptor_Purple_Adult",
+    "HarvestedTexture": null,
+    "BabyTexture": "Animals\\FC.Movoraptor_Purple_Baby",
+    "UseFlippedRightForLeft": true,
+    "SpriteWidth": 32,
+    "SpriteHeight": 32,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "Skins":[
+         {
+              "ID": "Fellowclown.ClownCore_BlueMovoraptor",
+               "Weight": 2.00,
+              "Texture": "Animals\\FC.Movoraptor_Blue_Adult",
+              "BabyTexture": "Animals\\FC.Movoraptor_Blue_Baby"
+            },
+            {
+              "ID": "Fellowclown.ClownCore_PinkMovoraptor",
+              "Weight": 0.02,
+              "Texture": "Animals\\FC.Movoraptor_Pink_Adult",
+              "BabyTexture": "Animals\\FC.Movoraptor_Pink_Baby"
+            },
+            {
+              "ID": "Fellowclown.ClownCore_PurpleMovoraptor",
+              "Weight": 1.0,
+              "Texture": "Animals\\FC.Movoraptor_Purple_Adult",
+              "BabyTexture": "Animals\\FC.Movoraptor_Purple_Baby"
+            },
+            {
+              "ID": "Fellowclown.ClownCore_PaleMovoraptor",
+              "Weight": 0.001,
+              "Texture": "Animals\\FC.Movoraptor_Pale_Adult",
+              "BabyTexture": "Animals\\FC.Movoraptor_Pale_Baby"
+            },
+          ],
+  "ShadowWhenBaby" :
+   {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdult" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenBabySwims" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdultSwims" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+    "CanSwim": true,
+    "BabiesFollowAdults": true,
+    "GrassEatAmount": 3,
+    "HappinessDrain": 5,
+    "UpDownPetHitboxTileSize": "1.5, 2",
+    "LeftRightPetHitboxTileSize": "2, 2",
+    "BabyUpDownPetHitboxTileSize": "1, 1",
+    "BabyLeftRightPetHitboxTileSize": "1, 1",
+  "StatToIncrementOnProduce": [
+      {
+        "RequiredItemId": null,
+        "RequiredWayfarers": [
+          "egg_item"
+        ],
+        "StatName": "ChickenEggsLayed"
+      }
+    ],
+    "ShowInSummitCredits": false,
+    "CustomFields": {}
+  }
+},
+      "When": {
+                "HasMod: |contains=Fellowclown.TW": true, 
+             }
+},
+{
+ "LogName": "ArkaCow",
+"Action": "EditData",
+"Target": "Data/FarmAnimals",
+"Entries": {
+"Fellowclown.ClownCore_ArkaCow": {
+    "DisplayName": "{{i18n:FC.ArkaCow}}",
+    "House": "Fellowclown.ClownCore_TropicalHutch",
+    "Gender": "Female",
+    "PurchasePrice": 4500,
+    "SellPrice": 3000,
+    "ShopTexture": "LooseSprites\\FC.ArkaCow_Icon",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 32,
+      "Height": 16
+    },
+    "ShopDisplayName": "{{i18n:FC.ArkaCow}}",
+    "ShopDescription": "{{i18n:FC.ArkaCow.desc}}",
+    "ShopMissingBuildingDescription":  "{{i18n:FC.MissingTropicalHutch}}",
+    "RequiredBuilding": "Fellowclown.ClownCore_TropicalHutch",
+    "UnlockCondition": "PLAYER_HAS_SEEN_EVENT Current Fellowclown.ClownCore_UnlockArkaAnimals",
+    "AlternatePurchaseTypes": null,
+    "EggItemIds": null,
+    "IncubationTime": -1,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": "{{i18n:FC.ArkaCowBirth}}",
+    "DaysToMature": 8,
+    "CanGetPregnant": true,
+    "DaysToProduce": 4,
+    "HarvestType": "HarvestWithTool",
+    "HarvestTool": "Milk Pail",
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "184"
+      }
+    ],
+    "DeluxeProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 1200,
+        "ItemId": "186"
+      }
+    ],
+    "ProduceOnMature": false,
+    "FriendshipForFasterProduce": -1,
+    "DeluxeProduceMinimumFriendship": 200,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "ProfessionForHappinessBoost": 3,
+    "ProfessionForQualityBoost": 3,
+    "ProfessionForFasterProduce": -1,
+    "Sound": "cow",
+    "BabySound": null,
+    "Texture": "Animals\\FC.ArkaCow_Adult_Black",
+    "HarvestedTexture": null,
+    "BabyTexture": "Animals\\FC.ArkaCow_Baby_Black",
+    "UseFlippedRightForLeft": true,
+    "SpriteWidth": 32,
+    "SpriteHeight": 32,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "Skins":[
+         {
+              "ID": "Fellowclown.ClownCore_BlackArkaCow",
+               "Weight": 0.001,
+              "Texture": "Animals\\FC.ArkaCow_Adult_Black",
+              "BabyTexture": "Animals\\FC.ArkaCow_Baby_Black"
+            },
+             {
+              "ID": "Fellowclown.ClownCore_BrownArkaCow",
+              "Weight": 2.00,
+              "Texture": "Animals\\FC.ArkaCow_Adult_Brown",
+              "BabyTexture": "Animals\\FC.ArkaCow_Baby_Brown"
+            },
+             {
+              "ID": "Fellowclown.ClownCore_PaleArkaCow",
+              "Texture": "Animals\\FC.ArkaCow_Adult_Pale",
+              "Weight": 1.0,
+              "BabyTexture": "Animals\\FC.ArkaCow_Baby_Pale"
+            },
+             {
+              "ID": "Fellowclown.ClownCore_RedArkaCow",
+              "Weight": 0.02,
+              "Texture": "Animals\\FC.ArkaCow_Adult_Red",
+              "BabyTexture": "Animals\\FC.ArkaCow_Baby_Red"
+            },
+          ],
+    "ShadowWhenBaby" :
+   {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdult" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenBabySwims" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdultSwims" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+    "CanSwim": false,
+    "BabiesFollowAdults": true,
+    "GrassEatAmount": 4,
+    "HappinessDrain": 5,
+    "UpDownPetHitboxTileSize": "1, 1.75",
+    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+    "StatToIncrementOnProduce": null,
+    "ShowInSummitCredits": false,
+    "CustomFields": {}
+  }
+},
+      "When": {
+                "HasMod: |contains=Fellowclown.TW": true, 
+             }
+},
+{
+ "LogName": "ArkaTapi",
+"Action": "EditData",
+"Target": "Data/FarmAnimals",
+"Entries": {
+"Fellowclown.ClownCore_ArkaTapi": {
+    "DisplayName": "{{i18n:FC.ArkaTapi}}",
+    "House": "Fellowclown.ClownCore_TropicalHutch",
+    "Gender": "Female",
+    "PurchasePrice": 4500,
+    "SellPrice": 2000,
+    "ShopTexture": "LooseSprites\\FC.ArkaTapi_Icon",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 32,
+      "Height": 16
+    },
+    "ShopDisplayName": "{{i18n:FC.ArkaTapi}}",
+    "ShopDescription": "{{i18n:FC.ArkaTapi.desc}}",
+    "ShopMissingBuildingDescription":  "{{i18n:FC.MissingTropicalHutch}}",
+    "RequiredBuilding": "Fellowclown.ClownCore_TropicalHutch",
+    "UnlockCondition": "PLAYER_HAS_SEEN_EVENT Current Fellowclown.ClownCore_UnlockArkaAnimals",
+    "AlternatePurchaseTypes": null,
+    "EggItemIds": null,
+    "IncubationTime": -1,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": "{{i18n:FC.ArkaTapiBirth}}",
+    "DaysToMature": 8,
+    "CanGetPregnant": true,
+    "DaysToProduce": 4,
+    "HarvestType": "DropOvernight",
+    "HarvestTool": null,
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "420"
+      }
+    ],
+    "DeluxeProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 1200,
+        "ItemId": "Fellowclown.TW_WarpRoot"
+      }
+    ],
+    "ProduceOnMature": false,
+    "FriendshipForFasterProduce": -1,
+    "DeluxeProduceMinimumFriendship": 200,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "ProfessionForHappinessBoost": 3,
+    "ProfessionForQualityBoost": 3,
+    "ProfessionForFasterProduce": -1,
+    "Sound": "pig",
+    "BabySound": "pig",
+    "Texture": "Animals\\FC.ArkaTapi_Adult_Black",
+    "HarvestedTexture": null,
+    "BabyTexture": "Animals\\FC.ArkaTapi_Baby_Black",
+    "UseFlippedRightForLeft": true,
+    "SpriteWidth": 32,
+    "SpriteHeight": 32,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "Skins":[
+         {
+              "ID": "Fellowclown.ClownCore_BlackArkaTapi",
+               "Weight": 0.001,
+              "Texture": "Animals\\FC.ArkaTapi_Adult_Black",
+              "BabyTexture": "Animals\\FC.ArkaTapi_Baby_Black"
+            },
+             {
+              "ID": "Fellowclown.ClownCore_BrownArkaTapi",
+              "Weight": 2.00,
+              "Texture": "Animals\\FC.ArkaTapi_Adult_Brown",
+              "BabyTexture": "Animals\\FC.ArkaTapi_Baby_Brown"
+            },
+             {
+              "ID": "Fellowclown.ClownCore_PaleArkaTapi",
+              "Texture": "Animals\\FC.ArkaTapi_Adult_Pale",
+              "Weight": 1.0,
+              "BabyTexture": "Animals\\FC.ArkaTapi_Baby_Pale"
+            },
+             {
+              "ID": "Fellowclown.ClownCore_RedArkaTapi",
+              "Weight": 0.02,
+              "Texture": "Animals\\FC.ArkaTapi_Adult_Red",
+              "BabyTexture": "Animals\\FC.ArkaTapi_Baby_Red"
+            },
+          ],
+    "ShadowWhenBaby" :
+   {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdult" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenBabySwims" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdultSwims" : {
+  "Visible" : false, // not actually needed, is true if omitted
+},
+    "CanSwim": false,
+    "BabiesFollowAdults": true,
+    "GrassEatAmount": 4,
+    "HappinessDrain": 5,
+    "UpDownPetHitboxTileSize": "1, 1.75",
+    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+    "StatToIncrementOnProduce": null,
+    "ShowInSummitCredits": false,
+    "CustomFields": {}
+   }
+},
+      "When": {
+                "HasMod: |contains=Fellowclown.TW": true, 
+             }
+},
+{
+ "LogName": "FC.FrenchDodo",
+"Action": "EditData",
+"Target": "Data/FarmAnimals",
+"Entries": {
+"Fellowclown.ClownCore_FrenchDodo": {
+    "DisplayName": "{{i18n:FC.FrenchDodo}}",
+    "House": "Fellowclown.ClownCore_TropicalHutch",
+    "Gender": "Female",
+    "PurchasePrice": 6000,
+    "SellPrice": 4000,
+    "ShopTexture": "LooseSprites/FC.FrenchDodo_Icon",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width":32,
+      "Height": 16
+    },
+    "ShopDisplayName": "{{i18n:FC.FrenchDodo}}",
+    "ShopDescription": "{{i18n:FC.FrenchDodo.desc}}",
+    "ShopMissingBuildingDescription": "{{i18n:FC.MissingTropicalHutch}}",
+    "RequiredBuilding": "Fellowclown.ClownCore_TropicalHutch",
+    "UnlockCondition": "PLAYER_HAS_MAIL current {{ModID}}_DodoEgg.Mail",
+    "AlternatePurchaseTypes": null,
+  "EggItemIds": [ "Fellowclown.ClownCore_FrenchDodoEgg" ],
+   "IncubationTime": 2000,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": "{{i18n:FC.DodoHatch}}",
+    "DaysToMature": 7,
+    "CanGetPregnant": false,
+    "DaysToProduce": 7,
+    "HarvestType": "DropOvernight",
+    "HarvestTool": null,
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "Fellowclown.ClownCore_FrenchDodoEgg"
+      }
+    ],
+    "DeluxeProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 200,
+        "ItemId": "216"
+      }
+    ],
+    "ProduceOnMature": true,
+    "FriendshipForFasterProduce": -1,
+    "DeluxeProduceMinimumFriendship": 450,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "ProfessionForHappinessBoost": 3,
+    "ProfessionForQualityBoost": 3,
+    "ProfessionForFasterProduce":-1,
+    "Sound": "Fellowclown.ClownCore_Dodo",
+    "BabySound": "rabbit",
+    "Texture": "Animals\\FC.FrenchDodo_Adult_Gray",
+    "HarvestedTexture": null,
+    "BabyTexture": "Animals\\FC.FrenchDodo_Baby_Gray",
+    "UseFlippedRightForLeft": false,
+    "SpriteWidth": 32,
+    "SpriteHeight": 32,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "Skins":[
+        {
+              "ID": "FC.FrenchDodo_Gray",
+               "Weight": 2.00,
+              "Texture": "Animals\\FC.FrenchDodo_Adult_Gray",
+              "BabyTexture": "Animals\\FC.FrenchDodo_Baby_Gray"
+            },
+             {
+              "ID": "FC.FrenchDodo_Black",
+               "Weight": 0.02,
+              "Texture": "Animals\\FC.FrenchDodo_Adult_Black",
+              "BabyTexture": "Animals\\FC.FrenchDodo_Baby_Black"
+            },
+             {
+              "ID": "FC.FrenchDodo_Blue",
+               "Weight": 0.001,
+              "Texture": "Animals\\FC.FrenchDodo_Adult_Blue",
+              "BabyTexture": "Animals\\FC.FrenchDodo_Baby_Blue"
+            },
+          ],
+  "ShadowWhenBaby" :
+   {
+  "Visible" : true, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdult" : {
+  "Visible" : true, // not actually needed, is true if omitted
+},
+  "ShadowWhenBabySwims" : {
+  "Visible" : true, // not actually needed, is true if omitted
+},
+  "ShadowWhenAdultSwims" : {
+  "Visible" : true, // not actually needed, is true if omitted
+},
+    "CanSwim": true,
+    "BabiesFollowAdults": true,
+    "GrassEatAmount": 3,
+    "HappinessDrain": 5,
+    "UpDownPetHitboxTileSize": "1.5, 2",
+    "LeftRightPetHitboxTileSize": "2, 2",
+    "BabyUpDownPetHitboxTileSize": "1, 1",
+    "BabyLeftRightPetHitboxTileSize": "1, 1",
+  "StatToIncrementOnProduce": [
+      {
+        "RequiredItemId": null,
+        "RequiredWayfarers": [
+          "egg_item"
+        ],
+        "StatName": "ChickenEggsLayed"
+      }
+    ],
+    "ShowInSummitCredits": true,
+    "CustomFields": {}
+  }
+},
+}
+    ]
+}

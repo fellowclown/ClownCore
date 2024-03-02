@@ -1,0 +1,342 @@
+{
+"Changes": [
+{
+"Action": "EditData",
+"Target": "Data/Shops",
+"Entries":
+{
+"Fellowclown.CC_Shop": {
+"Owners": [
+{
+"Name": "FC.Maverick",
+"Dialogues": [
+// dialogue any other time
+{
+  "Id": "Fellowclown.CC_Shop",
+  "Dialogue": "{{i18n:FC.DodoShop}}"
+},
+]
+},
+],
+"Items": [
+      {
+"Id": "{{ModId}}_FrenchDodoEgg",
+"ItemId": "{{ModID}}_FrenchDodoEgg",
+"AvailableStock":1,
+"AvailableStockLimit": "player"
+},
+]
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/Shops",
+"Entries":
+{
+"Fellowclown.RefugeShop": {
+"Owners": [
+{
+"Name": "None",
+},
+],
+"Items": [
+      {
+"Id": "241",
+"ItemId": "241",
+"AvailableStock":5,
+"AvailableStockLimit": "player"
+},
+{
+        "TradeItemId": null,
+        "TradeItemAmount": 1,
+        "Price": -1,
+        "ApplyProfitMargins": null,
+        "AvailableStock": -1,
+        "AvailableStockLimit": "Global",
+        "AvoidRepeat": false,
+        "UseObjectDataPrice": false,
+        "IgnoreShopPriceModifiers": false,
+        "PriceModifiers": null,
+        "PriceModifierMode": "Stack",
+        "AvailableStockModifiers": null,
+        "AvailableStockModifierMode": "Stack",
+        "Condition": null,
+        "Id": "(O)346",
+        "ItemId": "(O)346",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "PerItemCondition": null
+      },
+      {
+        "TradeItemId": null,
+        "TradeItemAmount": 1,
+        "Price": -1,
+        "ApplyProfitMargins": null,
+        "AvailableStock": -1,
+        "AvailableStockLimit": "Global",
+        "AvoidRepeat": false,
+        "UseObjectDataPrice": false,
+        "IgnoreShopPriceModifiers": false,
+        "PriceModifiers": null,
+        "PriceModifierMode": "Stack",
+        "AvailableStockModifiers": null,
+        "AvailableStockModifierMode": "Stack",
+        "Condition": null,
+        "Id": "(O)196",
+        "ItemId": "(O)196",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "PerItemCondition": null
+      },
+      {
+        "TradeItemId": null,
+        "TradeItemAmount": 1,
+        "Price": -1,
+        "ApplyProfitMargins": null,
+        "AvailableStock": -1,
+        "AvailableStockLimit": "Global",
+        "AvoidRepeat": false,
+        "UseObjectDataPrice": false,
+        "IgnoreShopPriceModifiers": false,
+        "PriceModifiers": null,
+        "PriceModifierMode": "Stack",
+        "AvailableStockModifiers": null,
+        "AvailableStockModifierMode": "Stack",
+        "Condition": null,
+        "Id": "(O)216",
+        "ItemId": "(O)216",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "PerItemCondition": null
+      },
+      {
+        "TradeItemId": null,
+        "TradeItemAmount": 1,
+        "Price": -1,
+        "ApplyProfitMargins": null,
+        "AvailableStock": -1,
+        "AvailableStockLimit": "Global",
+        "AvoidRepeat": false,
+        "UseObjectDataPrice": false,
+        "IgnoreShopPriceModifiers": false,
+        "PriceModifiers": null,
+        "PriceModifierMode": "Stack",
+        "AvailableStockModifiers": null,
+        "AvailableStockModifierMode": "Stack",
+        "Condition": null,
+        "Id": "(O)224",
+        "ItemId": "(O)224",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "PerItemCondition": null
+      },
+      {
+        "TradeItemId": null,
+        "TradeItemAmount": 1,
+        "Price": -1,
+        "ApplyProfitMargins": null,
+        "AvailableStock": -1,
+        "AvailableStockLimit": "Global",
+        "AvoidRepeat": false,
+        "UseObjectDataPrice": false,
+        "IgnoreShopPriceModifiers": false,
+        "PriceModifiers": null,
+        "PriceModifierMode": "Stack",
+        "AvailableStockModifiers": null,
+        "AvailableStockModifierMode": "Stack",
+        "Condition": null,
+        "Id": "(O)206",
+        "ItemId": "(O)206",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "PerItemCondition": null
+      },
+      {
+        "TradeItemId": null,
+        "TradeItemAmount": 1,
+        "Price": -1,
+        "ApplyProfitMargins": null,
+        "AvailableStock": -1,
+        "AvailableStockLimit": "Global",
+        "AvoidRepeat": false,
+        "UseObjectDataPrice": false,
+        "IgnoreShopPriceModifiers": false,
+        "PriceModifiers": null,
+        "PriceModifierMode": "Stack",
+        "AvailableStockModifiers": null,
+        "AvailableStockModifierMode": "Stack",
+        "Condition": null,
+        "Id": "(O)395",
+        "ItemId": "(O)395",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "PerItemCondition": null
+      },
+]
+}
+}
+},
+       {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Fellowclown.RefugeShop", "Items" ],
+                    "When": {
+        "HasMod": "Fellowclown.TW",
+      },
+            "Entries": {
+                "Fellowclown.TW_DragaDoughnut": {
+                    "Id": "Fellowclown.TW_DragaDoughnut",
+                    "ItemId": "Fellowclown.TW_DragaDoughnut",
+                },
+               "Fellowclown.TW_CapWedges": {
+                    "Id": "Fellowclown.TW_CapWedges",
+                    "ItemId": "Fellowclown.TW_CapWedges",
+                },
+                   "Fellowclown.TW_LoMaCakes": {
+                    "Id": "Fellowclown.TW_LoMaCakes",
+                    "ItemId": "Fellowclown.TW_LoMaCakes",
+                },
+                       "Fellowclown.TW_ZinfazuIcecream": {
+                    "Id": "Fellowclown.TW_ZinfazuIcecream",
+                    "ItemId": "Fellowclown.TW_ZinfazuIcecream",
+                },
+
+            },
+        },
+            {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Fellowclown.RefugeShop", "Items" ],
+                    "When": {
+        "HasMod": "Fellowclown.ANL",
+      },
+            "Entries": {
+                "Fellowclown.ANL_FrostedCake": {
+                    "Id": "Fellowclown.ANL_FrostedCake",
+                    "ItemId": "Fellowclown.ANL_FrostedCake",
+                },
+               "Fellowclown.ANL_HotCereal": {
+                    "Id": "Fellowclown.ANL_HotCereal",
+                    "ItemId": "Fellowclown.ANL_HotCereal",
+                },
+                   "Fellowclown.TW_LoMaCakes": {
+                    "Id": "Fellowclown.TW_LoMaCakes",
+                    "ItemId": "Fellowclown.TW_LoMaCakes",
+                },
+                       "Fellowclown.ANL_CheesyWhiteRisotto": {
+                    "Id": "Fellowclown.ANL_CheesyWhiteRisotto",
+                    "ItemId": "Fellowclown.ANL_CheesyWhiteRisotto",
+                },
+
+            },
+        },
+                {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Fellowclown.RefugeShop", "Items" ],
+                    "When": {
+        "HasMod": "Fellowclown.TD",
+      },
+            "Entries": {
+                "Fellowclown.TD_TastyPastry": {
+                    "Id": "Fellowclown.TD_TastyPastry",
+                    "ItemId": "Fellowclown.TD_TastyPastry",
+                },
+               "Fellowclown.TD_GemBirdPatties": {
+                    "Id": "Fellowclown.TD_GemBirdPatties",
+                    "ItemId": "Fellowclown.TD_GemBirdPatties",
+                },
+                   "Fellowclown.TD_VoidJuice": {
+                    "Id": "Fellowclown.TD_VoidJuice",
+                    "ItemId": "Fellowclown.TD_VoidJuice",
+                },
+                       "Fellowclown.ANL_CheesyWhiteRisotto": {
+                    "Id": "Fellowclown.ANL_CheesyWhiteRisotto",
+                    "ItemId": "Fellowclown.ANL_CheesyWhiteRisotto",
+                },
+
+            },
+        },
+                 {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Fellowclown.RefugeShop", "Items" ],
+                    "When": {
+        "HasMod": "Fellowclown.MF",
+      },
+            "Entries": {
+                "Fellowclown.MF_MilkCoffee": {
+                    "Id": "Fellowclown.MF_MilkCoffee",
+                    "ItemId": "Fellowclown.MF_MilkCoffee",
+                },
+            },
+        },
+]
+}
