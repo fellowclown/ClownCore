@@ -110,8 +110,8 @@
 "MapPath": "Maps/{{ModID}}_OldGraveYard"
 },
 "DefaultArrivalTile": {
-"X": 39,
-"Y": 63
+"X": 17,
+"Y": 36
 },
 "ExcludeFromNpcPathfinding": false,
 "ArtifactSpots": [
