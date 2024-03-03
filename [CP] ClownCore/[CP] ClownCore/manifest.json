@@ -21,8 +21,5 @@
          {
             "UniqueID": "spacechase0.SpaceCore",  "IsRequired": false 
         },
-          {
-            "UniqueID": "Esca.CustomNPCExclusions",  "IsRequired": true 
-        },
     ]
 }
