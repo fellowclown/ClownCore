@@ -1,0 +1,10 @@
+{
+/************************************************
+Custom Animal Buildings
+************************************************/
+"FC.LargeTropicalhutch.Desc": "A large sized hutch designed for tropical animals.",
+"FC.Tropicalhutch": "Tropical Hutch",
+"FC.MediumTropicalhutch.Desc": "A medium sized hutch designed for tropical animals.",
+"FC.SmallTropicalhutch.Desc": "A small sized hutch designed for tropical animals.",
+
+}
