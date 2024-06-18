@@ -128,7 +128,7 @@ Custom Buildings
 
                                             {
     "Action": "EditMap",
-    "Target": "Maps/Town-Fair,Town-Fair2",
+    "Target": "Maps/Town-Fair,Maps/Town-Fair2",
     "FromFile": "Maps/FairFestivalEdit.tbin",
     "ToArea": { "X":57, "Y": 94, "Width": 17, "Height":12
     },
