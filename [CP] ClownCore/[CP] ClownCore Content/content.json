@@ -1,5 +1,15 @@
 {
 "Format":"2.0.0",
+// CONFIG OPTIONS
+  "ConfigSchema": {
+    "AnimalHouse": {
+       "Description": "Switch between the barn or hutch. If you put barn you can house the custom animals in your barn, Fellowclown.ClownCore_SmallTropicalHutch if you like the hutch.",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+     
+    },
+  },
 "Changes":[
 /************************************************
 Tilesheets
@@ -30,8 +40,11 @@ Tilesheets
  {
 "LogName": "PC Technical Information",
 "Action": "Include",
-"FromFile": "Buildings/Buildings.json"
- },
+"FromFile": "Buildings/Buildings.json",
+  "When": {
+        "AnimalHouse": true
+            }
+        },
  /************************************************
 Custom Buildings
 ************************************************/
@@ -40,13 +53,19 @@ Custom Buildings
 "Action": "Load",
 "Target": "Maps/FC.TropicalAnimalHouseMapLarge,Maps/FC.TropicalAnimalHouseMapMedium,Maps/FC.TropicalAnimalHouseMapSmall",
 "FromFile": "Buildings/{{TargetWithoutPath}}.tbin",
-},
+  "When": {
+        "AnimalHouse": true
+            }
+        },
 {
 "LogName": "Tilesheets",
 "Action": "Load",
 "Target": "Buildings/FC.TropicalAnimalHouseLarge,Buildings/FC.TropicalAnimalHouseMedium,Buildings/FC.TropicalAnimalHouseSmall",
 "FromFile": "Buildings/{{TargetWithoutPath}}.png",
-},
+  "When": {
+        "AnimalHouse": true
+            }
+        },
     {
     "Action": "EditMap",
     "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
