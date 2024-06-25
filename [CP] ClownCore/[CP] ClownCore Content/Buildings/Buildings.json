@@ -80,8 +80,8 @@
 "Id": "Default_FeedHopper",
 "ItemId": "(BC)99",
 "Tile": {
-"X": 1,
-"Y": 8
+"X": 8,
+"Y": 6
 },
 "Indestructible": false
 },
@@ -89,8 +89,8 @@
 "Id": "Default_Incubator",
 "ItemId": "(BC)101",
 "Tile": {
-"X": 5,
-"Y": 7
+"X": 8,
+"Y":5
 },
 "Indestructible": false
 },
@@ -98,7 +98,7 @@
 "Id": "Default_Incubator",
 "ItemId": "(BC)101",
 "Tile": {
-"X": 5,
+"X": 8,
 "Y": 8
 },
 "Indestructible": false
@@ -283,11 +283,29 @@
 "Id": "Default_FeedHopper",
 "ItemId": "(BC)99",
 "Tile": {
-"X": 1,
-"Y": 8
+"X": 8,
+"Y": 6
 },
 "Indestructible": false
 },
+{
+"Id": "Default_Incubator",
+"ItemId": "(BC)101",
+"Tile": {
+"X": 8,
+"Y":5
+},
+"Indestructible": false
+},
+ {
+"Id": "Default_Incubator",
+"ItemId": "(BC)101",
+"Tile": {
+"X": 8,
+"Y": 8
+},
+"Indestructible": false
+}
 ],
 "AddMailOnBuild": null,
 "Metadata": {},
@@ -468,11 +486,29 @@
 "Id": "Default_FeedHopper",
 "ItemId": "(BC)99",
 "Tile": {
-"X": 1,
-"Y": 8
+"X": 8,
+"Y": 6
 },
 "Indestructible": false
 },
+{
+"Id": "Default_Incubator",
+"ItemId": "(BC)101",
+"Tile": {
+"X": 8,
+"Y":5
+},
+"Indestructible": false
+},
+ {
+"Id": "Default_Incubator",
+"ItemId": "(BC)101",
+"Tile": {
+"X": 8,
+"Y": 8
+},
+"Indestructible": false
+}
 ],
 "AddMailOnBuild": null,
 "Metadata": {},

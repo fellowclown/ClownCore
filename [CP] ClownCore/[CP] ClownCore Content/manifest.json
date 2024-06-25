@@ -28,5 +28,8 @@
                  {
             "UniqueID": "Wolf.RomRas",  "IsRequired": false 
         },
+               {
+            "UniqueID": "selph.ExtraAnimalConfig",  "IsRequired": false 
+        },
     ]
 }
