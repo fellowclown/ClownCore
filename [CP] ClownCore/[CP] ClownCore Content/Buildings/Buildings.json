@@ -1,6 +1,14 @@
 {
 "Changes": [
-
+{
+"Action": "EditData",
+"Target": "Data/PaintData",
+"Entries": {
+"{{ModId}}_TropicalHutch": "Building/-50 -10/Roof/-25 0/Trim/-25 -8",
+"{{ModId}}_MediumTropicalHutch": "Building/-50 -10/Roof/-25 0/Trim/-25 -8",
+"{{ModId}}_SmallTropicalHutch": "Building/-50 -10/Roof/-25 0/Trim/-25 -8",
+}
+},
 {
 "Action": "EditData",
 "Target": "Data/Buildings",
