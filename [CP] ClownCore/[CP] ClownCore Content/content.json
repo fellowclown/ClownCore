@@ -155,6 +155,12 @@ Custom Buildings
         "HasMod |contains=Rafseazz.RSVCP": true
             }
         },
+                         {
+    "Action": "EditMap",
+    "Target": "Maps/Beach-NightMarket",
+    "FromFile": "Maps/NightMarketEdit.tbin",
+    "ToArea": { "X":0, "Y": 17, "Width": 12, "Height":7},
+        },
                {
     "Action": "EditMap",
     "Target": "Maps/Beach-Luau,Maps/Beach-Luau2",
