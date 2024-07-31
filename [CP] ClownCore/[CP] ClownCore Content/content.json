@@ -155,11 +155,17 @@ Custom Buildings
         "HasMod |contains=Rafseazz.RSVCP": true
             }
         },
-                         {
+                             {
     "Action": "EditMap",
     "Target": "Maps/Beach-NightMarket",
     "FromFile": "Maps/NightMarketEdit.tbin",
     "ToArea": { "X":0, "Y": 17, "Width": 12, "Height":7},
+        },
+                         {
+    "Action": "EditMap",
+    "Target": "Maps/Town-Christmas",
+    "FromFile": "Maps/ChristmasEdit.tbin",
+    "ToArea": { "X":53, "Y": 83, "Width": 3, "Height":3},
         },
                {
     "Action": "EditMap",
