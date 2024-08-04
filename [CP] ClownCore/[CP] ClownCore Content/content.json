@@ -19,51 +19,6 @@
         "AnimalHouse": true
             },
         },
-
-{
-            "Action": "EditData",
-            "Target": "Data/Objects",
-              "When": {
-        "AnimalHouse": true
-            },
-            "Entries": {
-  "{{ModID}}_CarnivoreFeed": {
-    "Name": "{{ModID}}_CarnivoreFeed",
-    "DisplayName": "{{i18n:FC.CarnivoreFeed}}",
-    "Description": "{{i18n:FC.CarnivoreFeed.Desc}}",
-    "Type": "Animal Product",
-    "Category": -14,
-     "Price": 400,
-    "Edibility": -10,
-    "IsDrink": false,
-     "CanBeGivenAsGift": true,
-    "CanBeTrashed": true,
-     "ExcludeFromShippingCollection": "true",
-    "Buff": {
-    },
-    "Texture": "Mods/{{ModID}}/Objects",
-    "SpriteIndex": 0
-  },
-}
-},
-      {
-            "Action": "EditData",
-            "Target": "Data/Shops",
-                          "When": {
-        "AnimalHouse": true
-            },
-            "TargetField": [ "AnimalShop", "Items" ],
-            "Entries": {
-                "{{ModID}}_CarnivoreFeed": {
-                    "Id": "{{ModID}}_CarnivoreFeed",
-                    "ItemId": "{{ModID}}_CarnivoreFeed",
-                    "Price": 550
-                }
-            },
-            "MoveEntries": [
-                { "Id": "{{ModID}}_CarnivoreFeed", "BeforeId": "(O)178" }
-            ]
-        },
  {
 "LogName": "PC Technical Information",
  "When": {
