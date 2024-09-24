@@ -19,14 +19,6 @@
         "AnimalHouse": true
             },
         },
- {
-"LogName": "PC Technical Information",
- "When": {
-        "HasMod |contains=Fellowclown.PC": true
-            },
-"Action": "Include",
-"FromFile": "Data/WorldMap.json"
- },
 {
 "LogName": "Tilesheets",
 "Action": "Load",
@@ -34,12 +26,12 @@
 "FromFile": "Tilesheets/Vanilla/{{TargetWithoutPath}}.png",
 },
 {
-"LogName": "Tilesheets",
+"LogName": "Edit Hutch Design",
 "Action": "EditImage",
-"Target": "Maps/worldmap_spring,Maps/worldmap_summer,Maps/worldmap_fall,Maps/worldmap_winter",
-"FromFile": "Tilesheets/EarthyRecolor/{{TargetWithoutPath}}.png",
+"Target": "Buildings/FC.TropicalAnimalHouseLarge,Buildings/FC.TropicalAnimalHouseMedium,Buildings/FC.TropicalAnimalHouseSmall",
+"FromFile": "Tilesheets/Medieval/{{TargetWithoutPath}}.png",
  "When": {
-        "HasMod |contains=DaisyNiko.EarthyRecolour": true
+        "HasMod |contains=Gweniaczek.Medieval_buildings": true
             }
         },
  {
@@ -125,22 +117,22 @@ Custom Buildings
                {
     "Action": "EditMap",
     "Target": "Maps/Beach-Luau,Maps/Beach-Luau2",
-    "FromFile": "Maps/LuauFestivalEdit.tbin",
-    "ToArea": { "X":14, "Y": 27, "Width": 10, "Height":8},
+    "FromFile": "Maps/BeachEditNonEvent.tbin",
+    "ToArea": { "X":14, "Y": 25, "Width": 10, "Height":11},
         },
                     {
     "Action": "EditMap",
     "Target": "Maps/Beach-Jellies,Maps/Beach-Jellies2",
-    "FromFile": "Maps/BeachJellyFestivalEdit.tbin",
-    "ToArea": { "X":14, "Y": 27, "Width": 10, "Height":8},
+    "FromFile": "Maps/BeachEditNonEvent.tbin",
+    "ToArea": { "X":14, "Y": 25, "Width": 10, "Height":11},
         },
                         {
     "Action": "EditMap",
     "Target": "Maps/Beach",
-    "FromFile": "Maps/JellyFestivalEdit.tbin",
-    "ToArea": { "X":14, "Y": 27, "Width": 10, "Height":8},
+    "FromFile": "Maps/BeachEditEvent.tbin",
+    "ToArea": { "X":14, "Y": 25, "Width": 10, "Height":11},
          "When": {
-        "DayEvent": "dance of the moonlight jellies"
+        "DayEvent |contains=dance of the moonlight jellies": true,
             }
         },
                             {

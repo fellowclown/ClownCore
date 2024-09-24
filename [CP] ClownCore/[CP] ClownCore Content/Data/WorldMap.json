@@ -1,4 +1,5 @@
-{
+
+  {
   "Changes": [
     {
       "Action": "EditData",
@@ -9,7 +10,7 @@
           "BaseTexture": [
             {
               "Id": "Default",
-              "Texture": "{{InternalAssetKey: Tilesheets/EarthyRecolor/worldmap_{{season}}.png}}"
+              "Texture": "{{InternalAssetKey: Tilesheets/Vanilla/worldmap_{{season}}.png}}"
             }
           ],
           // The map areas that can provide tooltips, scroll text, texture overlays, and world positions.
@@ -22,7 +23,7 @@
                 "Width": 140,
                 "Height": 180
               },
-              "ScrollText": "Passerby Cemetery",
+              "ScrollText": "{{i18n:FC.PasserbyCemetery}}",
               "Tooltips": [
                 {
                   "Id": "Fellowclown.PC_PasserbyCemetery",
@@ -32,7 +33,7 @@
                     "Width": 19,
                     "Height": 14
                   },
-                  "Text": "Passerby Cemetery Entrance"
+                  "Text": "{{i18n:FC.PasserbyCemetery}}"
                 },
                 {
                   "Id": "Fellowclown.PC_StoneHouse",
@@ -42,7 +43,7 @@
                     "Width": 19,
                     "Height": 14
                   },
-                  "Text": "Stone Residents"
+                  "Text": "{{i18n:FC.StoneResidence}}"
                 },
                 {
                   "Id": "Fellowclown.PC_LeslaHouse",
@@ -52,7 +53,7 @@
                     "Width": 20,
                     "Height": 16
                   },
-                  "Text": "Lesla Residents"
+                  "Text": "{{i18n:FC.LeslaResidence}}"
                 },
                 {
                   "Id": "Fellowclown.PC_BeeNursery",
@@ -62,7 +63,7 @@
                     "Width": 21,
                     "Height": 16
                   },
-                  "Text": "Bee Nursery"
+                  "Text": "{{i18n:FC.BeeNursery}}"
                 },
                 {
                   "Id": "Fellowclown.PC_MavericksHouse",
@@ -72,13 +73,97 @@
                     "Width": 24,
                     "Height": 15
                   },
-                  "Text": "LoveJoy Residents"
-                }
+                  "Text": "{{i18n:FC.LovejoyResidence}}"
+                },
+                   {
+                  "Id": "Fellowclown.PC_TravelingTrailer",
+                  "PixelArea": {
+                   "X": 207,
+                    "Y": 67,
+                  "Width": 14,
+                    "Height": 5
+                  },
+                  "Text": "{{i18n:FC.BookWormMobile}}"
+                },
+                    {
+                  "Id": "Fellowclown.PC_TravelingTrailerDecker",
+                  "PixelArea": {
+                  "X": 208,
+                    "Y": 60,
+                    "Width": 12,
+                    "Height": 6
+                  },
+                  "Text": "{{i18n:FC.BookWormMobileDecker}}",
+                },
+                       {
+                  "Id": "Fellowclown.PC_Exhibit",
+                  "PixelArea": {
+                   "X": 99,
+                    "Y": 134,
+                    "Width": 15,
+                    "Height": 15
+                  },
+                  "Text": "{{i18n:FC.PasserbyExhibit}}",
+                },
+                     {
+                  "Id": "Fellowclown.PC_Temple",
+                  "PixelArea": {
+                   "X": 188,
+                    "Y": 40,
+                    "Width": 14,
+                    "Height": 11
+                  },
+                  "Text": "{{i18n:FC.PasserbyTemple}}",
+                },
+                      {
+                  "Id": "Fellowclown.PC_TempleRuins",
+                  "PixelArea": {
+                   "X": 188,
+                    "Y": 40,
+                    "Width": 14,
+                    "Height": 11
+                  },
+                  "Text": "{{i18n:FC.PasserbyTemple}}",
+                },
               ],
               // Match location names & tile positions to this map area. For example, when the player is
               // in the 'Lumisteria.MtVapius_Inn' location, their marker on the map is shown on top of the
               // inn building.
               "WorldPositions": [
+                 {
+                  "Id": "Fellowclown.PC_Temple",
+                  "LocationName": "Fellowclown.PC_Temple",
+                  "MapPixelArea": {
+                 "X": 188,
+                    "Y": 40,
+                    "Width": 14,
+                    "Height": 11
+                  },
+                  "ScrollText": "{{i18n:FC.PasserbyTemple}}"
+                },
+                {
+                  "Id": "Fellowclown.PCDefault",
+                  "LocationName": "Fellowclown.PC_OldGraveYard"
+                }
+              ]
+            },
+                           {
+                  "Id": "Fellowclown.PC_TempleRuins",
+                  "LocationName": "Fellowclown.PC_TempleRuins",
+                  "MapPixelArea": {
+                 "X": 188,
+                    "Y": 40,
+                    "Width": 14,
+                    "Height": 11
+                  },
+                  "ScrollText": "{{i18n:FC.PasserbyTemple}}"
+                },
+                {
+                  "Id": "Fellowclown.PCDefault",
+                  "LocationName": "Fellowclown.PC_OldGraveYard"
+                }
+              ]
+            },
                 {
                   "Id": "Fellowclown.PC_PasserbyCemetery",
                   "LocationName": "Fellowclown.PC_PasserbyCemetery",
@@ -99,7 +184,7 @@
                     "Width": 19,
                     "Height": 14
                   },
-                  "ScrollText": "Stone Residents" // optional, defaults to parent area's scroll text (if any)
+                  "ScrollText": "{{i18n:FC.StoneResidence}}" // optional, defaults to parent area's scroll text (if any)
                 },
                 {
                   "Id": "Fellowclown.PC_LeslaHouse",
@@ -110,7 +195,7 @@
                     "Width": 20,
                     "Height": 16
                   },
-                  "ScrollText": "Lesla Residents" // optional, defaults to parent area's scroll text (if any)
+                  "ScrollText": "{{i18n:FC.LeslaResidence}}" // optional, defaults to parent area's scroll text (if any)
                 },
                 {
                   "Id": "Fellowclown.PC_BeeNursery",
@@ -121,7 +206,7 @@
                     "Width": 21,
                     "Height": 16
                   },
-                  "ScrollText": "Bee Nursery" // optional, defaults to parent area's scroll text (if any)
+                  "ScrollText": "{{i18n:FC.BeeNursery}}" // optional, defaults to parent area's scroll text (if any)
                 },
                 {
                   "Id": "Fellowclown.PC_MavericksHouse",
@@ -132,7 +217,7 @@
                     "Width": 24,
                     "Height": 15
                   },
-                  "ScrollText": "LoveJoy Residents" // optional, defaults to parent area's scroll text (if any)
+                  "ScrollText": "{{i18n:FC.LoveJoyResidence}}" // optional, defaults to parent area's scroll text (if any)
                 },
                 {
                   "Id": "Fellowclown.PC_LyellsHouse",
@@ -143,7 +228,40 @@
                     "Width": 17,
                     "Height": 18
                   },
-                  "ScrollText": "Halkias Residents" // optional, defaults to parent area's scroll text (if any)
+                  "ScrollText": "{{i18n:FC.HalkiasResidence}}" // optional, defaults to parent area's scroll text (if any)
+                },
+                      {
+                  "Id": "Fellowclown.PC_TravelingTrailerDecker",
+                  "LocationName": "Fellowclown.PC_TravelingTrailerDecker",
+                  "MapPixelArea": {
+                    "X": 208,
+                    "Y": 60,
+                   "Width": 12,
+                    "Height": 6
+                  },
+                  "ScrollText": "{{i18n:FC.BookWormMobileDecker}}",
+                },
+                     {
+                  "Id": "Fellowclown.PC_TravelingTrailer",
+                  "LocationName": "Fellowclown.PC_TravelingTrailer",
+                  "MapPixelArea": {
+                    "X": 207,
+                    "Y": 67,
+                    "Width": 14,
+                    "Height": 5
+                  },
+                  "ScrollText": "{{i18n:FC.BookWormMobile}}"
+                },
+                       {
+                  "Id": "Fellowclown.PC_Exhibit",
+                  "LocationName": "Fellowclown.PC_Exhibit",
+                  "MapPixelArea": {
+                    "X": 99,
+                    "Y": 134,
+                    "Width": 15,
+                    "Height": 15
+                  },
+                  "ScrollText": "{{i18n:FC.PasserbyExhibit}}"
                 },
                 {
                   "Id": "Fellowclown.PCDefault",
@@ -159,7 +277,7 @@
                 "Width": 74,
                 "Height": 80
               },
-              "ScrollText": "Passerby Cemetery",
+              "ScrollText": "{{i18n:FC.PasserbyCemetery}}",
               "Tooltips": [
 
                 {
@@ -170,7 +288,7 @@
                     "Width": 17,
                     "Height": 18
                   },
-                  "Text": "Halkias Residents"
+                  "Text": "{{i18n:FC.HalkiasResidence}}"
                 }
               ],
               // Match location names & tile positions to this map area. For example, when the player is
@@ -186,7 +304,7 @@
                     "Width": 17,
                     "Height": 18
                   },
-                  "ScrollText": "Halkias Residents" // optional, defaults to parent area's scroll text (if any)
+                  "ScrollText": "{{i18n:FC.HalkiasResidence}}" // optional, defaults to parent area's scroll text (if any)
                 },
                 {
                   "Id": "Fellowclown.PCDefaultLyell",
@@ -197,6 +315,6 @@
           ]
         }
       }
-    }
+    },
   ]
 }

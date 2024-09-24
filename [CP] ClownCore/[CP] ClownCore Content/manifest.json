@@ -2,7 +2,7 @@
   "Name": "ClownCore",
    "Author": "Fellowclown",
    "Description": "Fellowclown's Core mod.",
-   "Version": "1.47.0", ///Version of your mod
+   "Version": "1.51.0", ///Version of your mod
    "UniqueID": "Fellowclown.ClownCore", 
  
    "ContentPackFor": {
