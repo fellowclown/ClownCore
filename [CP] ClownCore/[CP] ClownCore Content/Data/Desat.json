@@ -1,0 +1,64 @@
+{
+"Changes":[
+           {
+"Action": "EditImage",
+"Target": "Maps/spring_Fellowclown_Outdoors,Maps/summer_Fellowclown_Outdoors,Maps/fall_Fellowclown_Outdoors,Maps/winter_Fellowclown_Outdoors",
+"FromFile": "Assets/Maps/Tilesheets/GlowFlowerOpen_Desat.png",
+"Update": "OnTimeChange, OnLocationChange",
+"ToArea": { "X": 576, "Y": 624, "Width": 16, "Height": 32 },
+"When": {
+"Time": "{{Range: 2000, 2400}}",
+  "Recolor": "Desat" 
+}
+},
+        {
+"Action": "EditImage",
+"Target": "Maps/Fellowclown_mine_frost_dangerous,Maps/Events,Maps/spring_Fellowclown_Outdoors,Maps/summer_Fellowclown_Outdoors,Maps/fall_Fellowclown_Outdoors,Maps/winter_Fellowclown_Outdoors,Maps/Fellowclown_Indoors",
+"FromFile": "Tilesheets/Desat/{{TargetWithoutPath}}.png",
+"When": {
+     "Recolor": "Desat"
+}
+},
+{
+"LogName": "Edit Hutch Design",
+"Action": "EditImage",
+"Target": "Buildings/FC.TropicalAnimalHouseLarge,Buildings/FC.TropicalAnimalHouseMedium,Buildings/FC.TropicalAnimalHouseSmall",
+"FromFile": "Buildings/Desat/{{TargetWithoutPath}}.png",
+ "When": {
+     "Recolor": "Desat"
+            }
+        },
+        {
+"LogName": "Edit WorldMap Design",
+"Action": "EditImage",
+"Target": "Fellowclown.PC/Maps/WorldMap",
+"FromFile": "Tilesheets/Desat/worldmap_{{season}}.png",
+ "When": {
+     "Recolor": "Desat"
+            }
+        },
+
+        {
+        "Action": "EditImage",
+        "LogName": "Ancient GraveYard - digspots",
+        "Target": "LooseSprites/Cursors",
+        "FromFile": "Assets/Maps/Tilesheets/AncestorWisp_Desat.png",
+        "Priority": "Late",
+        "Update": "OnTimeChange, OnLocationChange",
+        "ToArea":{ "X": 368, "Y": 32, "Width": 64, "Height": 16 },
+        "When": { "LocationName": "{{ModID}}_AncientGraveYard",
+         "Recolor": "Desat" }
+   },
+     {
+        "Action": "EditImage",
+        "LogName": "Ancient GraveYard - digspots",
+        "Target": "LooseSprites/Cursors",
+        "FromFile": "Assets/Maps/Tilesheets/AncestorWisp_Desat.png",
+        "Priority": "Late",
+        "Update": "OnTimeChange, OnLocationChange",
+        "ToArea":{ "X": 368, "Y": 32, "Width": 64, "Height": 16 },
+        "When": { "LocationName": "{{ModID}}_OldGraveYard",
+         "Recolor": "Desat" }
+   },
+],
+}

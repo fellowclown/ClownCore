@@ -8,34 +8,21 @@
       "Default": "true",
       "AllowBlank": false,
     },
-  
+     "Recolor": {
+       "Description": "Switch between Desaturated or Vanilla colors for my tilesheets.",
+      "AllowValues": "Vanilla, Desat",
+      "Default": "Vanilla",
+      "AllowBlank": false,
+    },
   },
 "Changes":[
-{
-"Action": "Load",
-"Target": "Mods/{{ModID}}/Objects",
-"FromFile": "Objects/{{TargetWithoutPath}}.png",
-"When": {
-        "AnimalHouse": true
-            },
-        },
-{
-"LogName": "Tilesheets",
-"Action": "Load",
-"Target": "Maps/FC.LargeCropsTiles,Maps/Fellowclown_mine_frost_dangerous,Maps/Events,Maps/Fellowclown_AnimalRefuge,Maps/spring_Fellowclown_Outdoors,Maps/summer_Fellowclown_Outdoors,Maps/fall_Fellowclown_Outdoors,Maps/winter_Fellowclown_Outdoors,Maps/Fellowclown_Indoors",
-"FromFile": "Tilesheets/Vanilla/{{TargetWithoutPath}}.png",
-},
-{
-"LogName": "Edit Hutch Design",
-"Action": "EditImage",
-"Target": "Buildings/FC.TropicalAnimalHouseLarge,Buildings/FC.TropicalAnimalHouseMedium,Buildings/FC.TropicalAnimalHouseSmall",
-"FromFile": "Tilesheets/Medieval/{{TargetWithoutPath}}.png",
- "When": {
-        "HasMod |contains=Gweniaczek.Medieval_buildings": true
-            }
+         {
+"LogName": "Technical Information",
+"Action": "Include",
+"FromFile": "Data/Desat.json,Data/Compact.json,Data/MapPatches.json,Data/TileSheets.json",
         },
  {
-"LogName": "PC Technical Information",
+"LogName": "Technical Information",
 "Action": "Include",
 "FromFile": "Buildings/Buildings.json",
   "When": {
@@ -45,122 +32,5 @@
  /************************************************
 Custom Buildings
 ************************************************/
- {
-"LogName": "Tropical House Map",
-"Action": "Load",
-"Target": "Maps/FC.TropicalAnimalHouseMapLarge,Maps/FC.TropicalAnimalHouseMapMedium,Maps/FC.TropicalAnimalHouseMapSmall",
-"FromFile": "Buildings/{{TargetWithoutPath}}.tbin",
-  "When": {
-        "AnimalHouse": true
-            }
-        },
-         {
-"LogName": "Tropical House Tilesheets",
-"Action": "Load",
-"Target": "Buildings/FC.TropicalAnimalHouseLarge,Buildings/FC.TropicalAnimalHouseMedium,Buildings/FC.TropicalAnimalHouseSmall,Buildings/FC.TropicalAnimalHouseLarge_PaintMask,Buildings/FC.TropicalAnimalHouseMedium_PaintMask,Buildings/FC.TropicalAnimalHouseSmall_PaintMask",
-"FromFile": "Buildings/{{TargetWithoutPath}}.png",
-  "When": {
-        "AnimalHouse": true
-            }
-        },
-    {
-    "Action": "EditMap",
-    "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
-    "FromFile": "Maps/FlowerFestivalEditWOLFROMRAS.tbin",
-    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
-    "When": {
-        "HasMod |contains=Wolf.RomRas": true
-            }
-        },
-         {
-    "Action": "EditMap",
-    "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
-    "FromFile": "Maps/RSVFlowerFestivalEditWOLFROMRAS.tbin",
-    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
-    "When": {
-        "HasMod |contains=Wolf.RomRas": true,
-        "HasMod |contains=Rafseazz.RSVCP": true
-            }
-        },
-    {
-    "Action": "EditMap",
-    "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
-    "FromFile": "Maps/FlowerFestivalEdit.tbin",
-    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
-    "When": {
-        "HasMod |contains=Rafseazz.RSVCP": false,
-        "HasMod |contains=Wolf.RomRas": false
-            }
-        },
-         {
-    "Action": "EditMap",
-    "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
-    "FromFile": "Maps/RSVFlowerFestivalEdit.tbin",
-    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12
-    },
-         "When": {
-        "HasMod |contains=Rafseazz.RSVCP": true
-            }
-        },
-                             {
-    "Action": "EditMap",
-    "Target": "Maps/Beach-NightMarket",
-    "FromFile": "Maps/NightMarketEdit.tbin",
-    "ToArea": { "X":0, "Y": 17, "Width": 12, "Height":7},
-        },
-                         {
-    "Action": "EditMap",
-    "Target": "Maps/Town-Christmas",
-    "FromFile": "Maps/ChristmasEdit.tbin",
-    "ToArea": { "X":53, "Y": 83, "Width": 3, "Height":3},
-        },
-               {
-    "Action": "EditMap",
-    "Target": "Maps/Beach-Luau,Maps/Beach-Luau2",
-    "FromFile": "Maps/BeachEditNonEvent.tbin",
-    "ToArea": { "X":14, "Y": 25, "Width": 10, "Height":11},
-        },
-                    {
-    "Action": "EditMap",
-    "Target": "Maps/Beach-Jellies,Maps/Beach-Jellies2",
-    "FromFile": "Maps/BeachEditNonEvent.tbin",
-    "ToArea": { "X":14, "Y": 25, "Width": 10, "Height":11},
-        },
-                        {
-    "Action": "EditMap",
-    "Target": "Maps/Beach",
-    "FromFile": "Maps/BeachEditEvent.tbin",
-    "ToArea": { "X":14, "Y": 25, "Width": 10, "Height":11},
-         "When": {
-        "DayEvent |contains=dance of the moonlight jellies": true,
-            }
-        },
-                            {
-    "Action": "EditMap",
-    "Target": "Maps/Forest-IceFestival,Maps/Forest-IceFestival2",
-    "FromFile": "Maps/IceFestivalEdit.tbin",
-    "ToArea": { "X":93, "Y": 12, "Width": 18, "Height":11},
-         "When": {
-        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
-            }
-        },
-                                    {
-    "Action": "EditMap",
-    "Target": "Maps/Forest-IceFestival,Maps/Forest-IceFestival2",
-    "FromFile": "Maps/IceFestivalEditSVE.tbin",
-    "ToArea": { "X":93, "Y": 11, "Width": 18, "Height":12},
-         "When": {
-        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
-            }
-        },
-
-                                            {
-    "Action": "EditMap",
-    "Target": "Maps/Town-Fair,Maps/Town-Fair2",
-    "FromFile": "Maps/FairFestivalEdit.tbin",
-    "ToArea": { "X":57, "Y": 94, "Width": 17, "Height":12
-    },
-        },
-
 ],
 }

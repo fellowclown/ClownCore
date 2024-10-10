@@ -1,0 +1,19 @@
+{
+"Changes":[
+{
+"LogName": "Tilesheets",
+"Action": "Load",
+"Target": "Maps/Fellowclown_mine_frost_dangerous,Maps/Events,Maps/Fellowclown_AnimalRefuge,Maps/spring_Fellowclown_Outdoors,Maps/summer_Fellowclown_Outdoors,Maps/fall_Fellowclown_Outdoors,Maps/winter_Fellowclown_Outdoors,Maps/Fellowclown_Indoors",
+"FromFile": "Tilesheets/Vanilla/{{TargetWithoutPath}}.png",
+},
+ {
+"LogName": "Tropical House Tilesheets",
+"Action": "Load",
+"Target": "Buildings/FC.TropicalAnimalHouseLarge,Buildings/FC.TropicalAnimalHouseMedium,Buildings/FC.TropicalAnimalHouseSmall,Buildings/FC.TropicalAnimalHouseLarge_PaintMask,Buildings/FC.TropicalAnimalHouseMedium_PaintMask,Buildings/FC.TropicalAnimalHouseSmall_PaintMask",
+"FromFile": "Buildings/{{TargetWithoutPath}}.png",
+  "When": {
+        "AnimalHouse": true
+            }
+        },
+],
+}
