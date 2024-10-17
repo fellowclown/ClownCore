@@ -3,7 +3,7 @@
            {
 "Action": "EditImage",
 "Target": "Maps/spring_Fellowclown_Outdoors,Maps/summer_Fellowclown_Outdoors,Maps/fall_Fellowclown_Outdoors,Maps/winter_Fellowclown_Outdoors",
-"FromFile": "Assets/Maps/Tilesheets/GlowFlowerOpen_Desat.png",
+"FromFile": "Tilesheets/Desat/GlowFlowerOpen.png",
 "Update": "OnTimeChange, OnLocationChange",
 "ToArea": { "X": 576, "Y": 624, "Width": 16, "Height": 32 },
 "When": {
@@ -42,23 +42,31 @@
         "Action": "EditImage",
         "LogName": "Ancient GraveYard - digspots",
         "Target": "LooseSprites/Cursors",
-        "FromFile": "Assets/Maps/Tilesheets/AncestorWisp_Desat.png",
+        "FromFile": "Tilesheets/Desat/AncestorWisp_Desat.png",
         "Priority": "Late",
         "Update": "OnTimeChange, OnLocationChange",
         "ToArea":{ "X": 368, "Y": 32, "Width": 64, "Height": 16 },
-        "When": { "LocationName": "{{ModID}}_AncientGraveYard",
+        "When": { "LocationName": "Fellowclown.PC_AncientGraveYard",
          "Recolor": "Desat" }
    },
      {
         "Action": "EditImage",
         "LogName": "Ancient GraveYard - digspots",
         "Target": "LooseSprites/Cursors",
-        "FromFile": "Assets/Maps/Tilesheets/AncestorWisp_Desat.png",
+        "FromFile": "Tilesheets/Desat/AncestorWisp_Desat.png",
         "Priority": "Late",
         "Update": "OnTimeChange, OnLocationChange",
         "ToArea":{ "X": 368, "Y": 32, "Width": 64, "Height": 16 },
-        "When": { "LocationName": "{{ModID}}_OldGraveYard",
+        "When": { "LocationName": "Fellowclown.PC_OldGraveYard",
          "Recolor": "Desat" }
    },
+              {
+"Action": "EditImage",
+"Target": "Mods/Fellowclown.PC/FC.LargeCrops,Mods/Fellowclown.PC/ExhibitBundleIcon,Mods/Fellowclown.PC/ExhibitBundleBackgroundImage,Mods/Fellowclown.PC/CottonsBundleIcon,Mods/Fellowclown.PC/CottonsBundleBackgroundImage,Mods/Fellowclown.PC/BigToysFront,Mods/Fellowclown.PC/BigToys,Mods/Fellowclown.PC/Hats,Mods/Fellowclown.PC/Wallet,Mods/Fellowclown.PC/FC.BuffIcons,Mods/Fellowclown.PC/VoidTree,Mods/Fellowclown.PC/WildTree_spring,Mods/Fellowclown.PC/WildTree_summer,Mods/Fellowclown.PC/WildTree_fall,Mods/Fellowclown.PC/WildTree_winter,Mods/Fellowclown.PC/Machines,Mods/Fellowclown.PC/OddCrows,Mods/Fellowclown.PC/Objects,Mods/Fellowclown.PC/Shirts,Mods/Fellowclown.PC/Crops,Mods/Fellowclown.PC/Trees,Mods/Fellowclown.PC/JokeTools,Mods/Fellowclown.PC/Furniture,Mods/Fellowclown.PC/FurnitureFront,Mods/Fellowclown.PC/Weapons",
+"FromFile": "Tilesheets/Desat/{{TargetWithoutPath}}.png",
+"When": {
+  "Recolor": "Desat" 
+}
+},
 ],
 }

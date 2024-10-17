@@ -47,13 +47,13 @@
 "BuildCost": 25000,
 "BuildMaterials": [
 {
-"ItemId": "(O)388",
+"ItemId": "(O)Fellowclown.PC_MeekWood",
 "Amount": 550
 },
 {
-"ItemId": "(O)390",
-"Amount": 300
-}
+"ItemId": "(O)Fellowclown.PC_HeaviousWood",
+"Amount": 150
+},
 ],
 "BuildingToUpgrade": "{{ModId}}_MediumTropicalHutch",
 "MagicalConstruction": false,
@@ -250,13 +250,13 @@
 "BuildCost": 15000,
 "BuildMaterials": [
 {
-"ItemId": "(O)388",
-"Amount": 300
+"ItemId": "(O)Fellowclown.PC_MeekWood",
+"Amount": 550
 },
 {
-"ItemId": "(O)390",
-"Amount": 200
-}
+"ItemId": "(O)Fellowclown.PC_HeaviousWood",
+"Amount": 150
+},
 ],
 "BuildingToUpgrade": "{{ModId}}_SmallTropicalHutch",
 "MagicalConstruction": false,
@@ -453,13 +453,13 @@
 "BuildCost": 2000,
 "BuildMaterials": [
 {
-"ItemId": "(O)388",
+"ItemId": "(O)Fellowclown.PC_MeekWood",
 "Amount": 250
 },
 {
-"ItemId": "(O)390",
+"ItemId": "(O)Fellowclown.PC_HeaviousWood",
 "Amount": 150
-}
+},
 ],
 "BuildingToUpgrade": null,
 "MagicalConstruction": false,

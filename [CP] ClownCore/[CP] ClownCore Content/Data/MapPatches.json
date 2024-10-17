@@ -1,5 +1,13 @@
 {
 "Changes":[
+    {
+"LogName": "Map Strings Edit",
+"Action": "EditData",
+"Target": "Strings/StringsFromMaps",
+"Entries": {
+"Hutch.Berries": "{{i18n:Hutch.Berries}}"
+}
+ },
  {
 "LogName": "Tropical House Map",
 "Action": "Load",
