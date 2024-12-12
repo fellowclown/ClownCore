@@ -115,6 +115,23 @@
     "ToArea": { "X":57, "Y": 94, "Width": 17, "Height":12
     },
         },
-
+{
+    "Action": "EditMap",
+    "Target": "Maps/Town-Halloween,Maps/Town-Halloween2",
+    "FromFile": "Maps/HalloweenEdit.tbin",
+    "ToArea": { "X":21, "Y": 73, "Width": 18, "Height":12},
+     "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+}
+},
+{
+    "Action": "EditMap",
+    "Target": "Maps/Town-Halloween,Maps/Town-Halloween2",
+    "FromFile": "Maps/HalloweenEdit-SVE.tbin",
+    "ToArea": { "X":21, "Y": 72, "Width": 18, "Height":14},
+     "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+}
+},
 ],
 }
