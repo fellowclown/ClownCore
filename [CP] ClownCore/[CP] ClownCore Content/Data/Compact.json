@@ -6,7 +6,8 @@
 "Target": "Buildings/FC.TropicalAnimalHouseLarge,Buildings/FC.TropicalAnimalHouseMedium,Buildings/FC.TropicalAnimalHouseSmall",
 "FromFile": "Buildings/Medieval/{{TargetWithoutPath}}.png",
  "When": {
-        "HasMod |contains=Gweniaczek.Medieval_buildings": true
+        "HasMod |contains=Gweniaczek.Medieval_buildings": true,
+               "AnimalHouse": true
             }
         },
 ],

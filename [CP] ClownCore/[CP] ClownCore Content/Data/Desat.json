@@ -23,7 +23,7 @@
 "LogName": "Edit Hutch Design",
 "Action": "EditImage",
 "Target": "Buildings/FC.TropicalAnimalHouseLarge,Buildings/FC.TropicalAnimalHouseMedium,Buildings/FC.TropicalAnimalHouseSmall",
-"FromFile": "Buildings/Desat/{{TargetWithoutPath}}.png",
+"FromFile": "Tilesheets/Desat/{{TargetWithoutPath}}.png",
  "When": {
      "Recolor": "Desat"
             }
